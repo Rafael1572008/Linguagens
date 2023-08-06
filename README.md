@@ -1,2 +1,2 @@
-# Linguagem-C
-Aprendendo C
+# Linguagens de programação
+Aprendendo
