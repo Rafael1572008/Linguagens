@@ -50,5 +50,29 @@ if (condição¹ && condição²) {
 
 } else{}
 
-se o comando tiver mais um "condição 'e' condição"
-if (condição¹ || condição²) {}
+--condições---
+Conjunção:("e" logico): if (condição¹ && condição²) {}
+Disjunção("ou" logico): if (condição¹ || condição²) {}
+inversão: (negação-"não-logico"): if (condição¹ ! condição²) [quando o operador e falso]
+
+===switch-case(Escolha)===
+//compareação de igualdade
+Sintaxe:
+switch (<var>) {
+   case <v1>:
+      [comando]
+      break;
+   case <v2>:
+      [comando]
+      break;
+   case <v3>:
+      [comando]
+      break;
+   ...
+   case <vn>:
+      [comando]
+      break;
+   defalut: (//Tipo um senão)
+      [comando]
+      break;
+}
