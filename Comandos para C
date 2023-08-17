@@ -80,3 +80,7 @@ switch (<var>) {
 ===especificadores logicos===
 (a=b) (a==b);
 (a<>b) (a!=b);
+
+===repetição===
+for(<var>=0; (<var>)<(Nf); <var>++){} / na parte (<var ++>, se for um numrro difirente de 1, digite (<var>=n))
+
