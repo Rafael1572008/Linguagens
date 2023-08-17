@@ -76,3 +76,7 @@ switch (<var>) {
       [comando]
       break;
 }
+
+===especificadores logicos===
+(a=b) (a==b);
+(a<>b) (a!=b);
