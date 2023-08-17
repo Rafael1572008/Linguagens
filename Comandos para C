@@ -8,13 +8,13 @@ int main()
     return 0;
 }
    ===
-/a : toca um bipe
-/b :backspace
-/n :quebra de linha
-/t tabulação de linha
-/r :retorno ao inicio da linha
-/0 :caracter nulo
-/v :tabulação vertical
+\a : toca um bipe
+\b :backspace
+\n :quebra de linha
+\t tabulação de linha
+\r :retorno ao inicio da linha
+\0 :caracter nulo
+\v :tabulação vertical
 
 ===especificador de formato===
 %d. :valor inteiro
