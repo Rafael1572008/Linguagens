@@ -27,10 +27,10 @@ printf("hello, word!");
 scanf(<form>, &<v1>, &<v2>);
 
 ===especificadores de formato===
-d ou i :n interiro em base decimal
-f :n em ponto flutuate(com base decimal)
-e :n em notação cientifica
-s :sequência de palavras(texto)
+%d ou i :n interiro em base decimal
+%f :n em ponto flutuate(com base decimal)
+%e :n em notação cientifica
+%s :sequência de palavras(texto)
 %lf :double
 
 ===tipos de dados===
@@ -84,3 +84,9 @@ switch (<var>) {
 ===repetição===
 for(<var>=0; (<var>)<(Nf); <var>++){} / na parte (<var ++>, se for um numrro difirente de 1, digite (<var>=n))
 
+===vetores===
+<tipos de dados> nun[n];
+
+scanf("%ef", & num[<var>])
+
+stryng=nome da dodo ao vetor de caracter
