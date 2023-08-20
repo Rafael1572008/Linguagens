@@ -85,8 +85,16 @@ switch (<var>) {
 for(<var>=0; (<var>)<(Nf); <var>++){} / na parte (<var ++>, se for um numrro difirente de 1, digite (<var>=n))
 
 ===vetores===
-<tipos de dados> nun[n];
+Manipulação na definição de var
+<Tipo> <nome>[<tamanho>] = [n, n1, n2 ,n3 ,n4...nn]
 
-scanf("%ef", & num[<var>])
+===break e continue===
+f(condição){
+    Break;
+} /interrompe à repetição (toda)
+--------------------------------
+If(condição){
+    Continue;
+} /Ele passa para a próxima interação
 
 stryng=nome da dodo ao vetor de caracter
