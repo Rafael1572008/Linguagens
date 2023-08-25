@@ -88,6 +88,31 @@ for(<var>=0; (<var>)<(Nf); <var>++){} / na parte (<var ++>, se for um numrro dif
 Manipulação na definição de var
 <Tipo> <nome>[<tamanho>] = [n, n1, n2 ,n3 ,n4...nn]
 
+---Strings---
+Tem que declarar o tamnho no char, se não ele salva apenas um caractere
+
+Ex: se vc tiver uma string com 10 letras, ela tera q ter 11, pq vai ter no final "\0" sinalizando o final da palavra.
+"Não precisa de "&" no scanf
+
+sintaxe geral:
+scanf("%s", <str>);
+
+sintaxe aprimorada:
+scanf("%<tam.-1>[^\n]s", <str>);
+
+fgets(<string>, <tam>, stdin) /ele ja coloca o \0 (stdin, entrada de dados padrão [teclado])
+
+Fflush(stdin); \ele inpede q "lixo" de outro scanf(%s) vá para o proximo
+
+
+usando A biblioteca (#string.h)
+strcpy(<destino>, <origem>); /usado para alterar o conteudo de um string
+strcat(<destino>, origem); /quando quero colar uma string na outra
+strlen(<string>); /mostra o tamaho da strinf
+strcmp(<string¹>, <string²>) comparar igualdade entre strings, se elas forem iguais, essa função vai emprimir o valor de 0. se não vai ser um valor aleatorio
+---A biblioteca #locale.h---
+setlocale(LC_ALL, "portuguese"); /permite colocar acentos, recomandado colocar na primeiroa linha de comando
+
 ===break e continue===
 f(condição){
     Break;
@@ -96,5 +121,3 @@ f(condição){
 If(condição){
     Continue;
 } /Ele passa para a próxima interação
-
-stryng=nome da dodo ao vetor de caracter
