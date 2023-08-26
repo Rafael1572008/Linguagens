@@ -5,6 +5,8 @@ include <stdio.h>
 int main()
 {
     printf("Hello world!\n");
+    scanf(<form>, &<v1>, &<v2>);
+
     return 0;
 }
    ===
@@ -16,22 +18,17 @@ int main()
 \0 :caracter nulo
 \v :tabulação vertical
 
+"&" serve para endereço de memoria
+
 ===especificador de formato===
-%d. :valor inteiro
-%f. :valor real
-%.2f% :valor real comapenas duas casas
-%c. :Dados de texto (apenas uma letra)
-%s. :Dados de texto (palavras)
-
-printf("hello, word!");
-scanf(<form>, &<v1>, &<v2>);
-
-===especificadores de formato===
-%d ou i :n interiro em base decimal
-%f :n em ponto flutuate(com base decimal)
-%e :n em notação cientifica
-%s :sequência de palavras(texto)
-%lf :double
+"%d" :valor inteiro
+"%f" :valor real
+"%.2f%" :valor real comapenas duas casas
+"%c" :Dados de texto (apenas uma letra)
+"%s" :Dados de texto (palavras)
+%lf" :double
+%p" :Ponteiro 
+"%e" :Notação ciêntifica
 
 ===tipos de dados===
 carm +-127
@@ -78,8 +75,8 @@ switch (<var>) {
 }
 
 ===especificadores logicos===
-(a=b) (a==b);
-(a<>b) (a!=b);
+(a=b) -> (a==b);
+(a<>b) -> (a!=b);
 
 ===repetição===
 for(<var>=0; (<var>)<(Nf); <var>++){} / na parte (<var ++>, se for um numrro difirente de 1, digite (<var>=n))
@@ -91,8 +88,7 @@ Manipulação na definição de var
 ---Strings---
 Tem que declarar o tamnho no char, se não ele salva apenas um caractere
 
-Ex: se vc tiver uma string com 10 letras, ela tera q ter 11, pq vai ter no final "\0" sinalizando o final da palavra.
-"Não precisa de "&" no scanf
+Ex: se vc tiver uma string com 10 letras, ela tera q ter 11, pq vai ter no final "\0" sinalizando o final da palavra. "Não precisa de "&" no scanf
 
 while(p[i] != '\0'){
         printf("%d = %c\n", i, p[i++]);
@@ -105,17 +101,22 @@ sintaxe aprimorada:
 scanf("%<tam.-1>[^\n]s", <str>);
 
 fgets(<string>, <tam + 1>, stdin) /ele ja coloca o \0 (stdin, entrada de dados padrão [teclado]). 1º onde desejo salvar, 2º o tamanho max. ele ja poem "\0"
-
 Fflush(stdin); \ele inpede q "lixo" de outro scanf(%s) vá para o proximo
-
 
 ---usando A biblioteca (#string.h)
 strcpy(<destino>, <origem>); /usado para alterar o conteudo de um string
 strcat(<destino>, origem); /quando quero colar uma string na outra
 strlen(<string>); /mostra o tamaho da strinf
-strcmp(<string¹>, <string²>) comparar igualdade entre strings, se elas forem iguais, essa função vai emprimir o valor de 0. se não vai ser um valor aleatorio
+<var> = strcmp(<string¹>, <string²>) comparar igualdade entre strings, se elas forem iguais, essa função vai emprimir o valor de 0. se a string 1 for menor q a 2, o valor e negativo. se a string 1 for maior que a 2, ele imprimi um valor positivo. (comapar caracter, EX: c vai ser maior que d)
+strchar(); /retorna a primeira ocorê ncia
+
 ---A biblioteca #locale.h---
 setlocale(LC_ALL, "portuguese"); /permite colocar acentos, recomandado colocar na primeiroa linha de comando
+
+---ponteiro---
+Ponteiros armazenam indereços de memoria. O tipo do ponteiro depende do tipo da variavel apontada por ele
+
+*<var>
 
 ===break e continue===
 f(condição){
