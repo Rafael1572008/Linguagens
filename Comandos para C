@@ -94,18 +94,22 @@ Tem que declarar o tamnho no char, se não ele salva apenas um caractere
 Ex: se vc tiver uma string com 10 letras, ela tera q ter 11, pq vai ter no final "\0" sinalizando o final da palavra.
 "Não precisa de "&" no scanf
 
+while(p[i] != '\0'){
+        printf("%d = %c\n", i, p[i++]);
+    } /comando para saber a onde termina a frase "\0". ele considera o espaço no final
+
 sintaxe geral:
-scanf("%s", <str>);
+scanf("%s", <str>); \não precisa de "&", n use. ele para de ler no primeiro espaço. ainda por cima ele deixa passa o tamanho do vetor, dando erro
 
 sintaxe aprimorada:
 scanf("%<tam.-1>[^\n]s", <str>);
 
-fgets(<string>, <tam>, stdin) /ele ja coloca o \0 (stdin, entrada de dados padrão [teclado])
+fgets(<string>, <tam + 1>, stdin) /ele ja coloca o \0 (stdin, entrada de dados padrão [teclado]). 1º onde desejo salvar, 2º o tamanho max. ele ja poem "\0"
 
 Fflush(stdin); \ele inpede q "lixo" de outro scanf(%s) vá para o proximo
 
 
-usando A biblioteca (#string.h)
+---usando A biblioteca (#string.h)
 strcpy(<destino>, <origem>); /usado para alterar o conteudo de um string
 strcat(<destino>, origem); /quando quero colar uma string na outra
 strlen(<string>); /mostra o tamaho da strinf
