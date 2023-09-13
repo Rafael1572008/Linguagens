@@ -26,8 +26,8 @@ int main()
 "%.2f%" :valor real comapenas duas casas
 "%c" :Dados de texto (apenas uma letra)
 "%s" :Dados de texto (palavras)
-%lf" :double
-%p" :Ponteiro 
+"%lf" :double
+"%p" :Ponteiro 
 "%e" :Notação ciêntifica
 
 ===tipos de dados===
