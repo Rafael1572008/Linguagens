@@ -126,3 +126,28 @@ f(condição){
 If(condição){
     Continue;
 } /Ele passa para a próxima interação
+
+------------Matrizes------------
+Sintaxe:
+<tipo> <nome>[<dim1>][dim2]...[dimN];
+
+Sintaxe de acesso de posição:
+<nome>[<i1>][<i2>]...[<iN>]
+
+Sintaxe de iniciação:
+<declaração> = {{<i1>}, {<i2>},...,{iN}};
+
+"i" sendo as colunas e "n" sendo as linhas;
+
+ex de declaração:
+vet[0][0] = <n>
+vet[c][l] = <n>: "c" sendo coluna e "n" linha;
+
+ex de "print"
+printf("%t", vet[0][0]);
+
+imprimeir toda a matriz:
+for(i=0;i<n;i++){
+	for(j=0;j<n;j++){
+		printf("%t", vet[i][j])
+}}
