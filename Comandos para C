@@ -1,3 +1,7 @@
+===bibliotecas===
+<stdlib.h>: faz possivel ultilizar printf e  scanf;
+<string.h>: melhora a ultilização de strings;
+<locale.h>: permite que eu digite letras com acentos; (setlocale[LC_ALL, "Portugues"])
 ===estrutura===
 include <stdio.h>
 #include <stdlib.h>
@@ -17,6 +21,7 @@ int main()
 \r :retorno ao inicio da linha
 \0 :caracter nulo
 \v :tabulação vertical
+#define const(fora do int main())
 
 "&" serve para endereço de memoria
 
@@ -90,9 +95,10 @@ Tem que declarar o tamnho no char, se não ele salva apenas um caractere
 
 Ex: se vc tiver uma string com 10 letras, ela tera q ter 11, pq vai ter no final "\0" sinalizando o final da palavra. "Não precisa de "&" no scanf
 
-while(p[i] != '\0'){
-        printf("%d = %c\n", i, p[i++]);
-    } /comando para saber a onde termina a frase "\0". ele considera o espaço no final
+comando para saber o tamalho de uma string
+ for (int i = 0; fra[i] != '\0'; i++) {
+        if (fra[i] == l) {
+            cont++;
 
 sintaxe geral:
 scanf("%s", <str>); \não precisa de "&", n use. ele para de ler no primeiro espaço. ainda por cima ele deixa passa o tamanho do vetor, dando erro
@@ -151,3 +157,26 @@ for(i=0;i<n;i++){
 	for(j=0;j<n;j++){
 		printf("%t", vet[i][j])
 }}
+
+===Structs===
+Definir novo tipo: typedef;
+
+Sintaxe:
+struct <nome_tipo>{
+	<tipo1><campo1>;
+	<tipo2><campo2>;
+	<tipoN><campoN>:
+};
+
+Sintaxe de declaração struct:
+struct <nome_tipo><nome_variável>;
+<novo_nome><nome_variavel>;
+
+typedef:REnomeia um identificador:
+sintaxe:
+	typedef <tipo> <novo_nome>;
+
+intarração com o ussuario:
+
+print("");
+scanf("%d", %<nome_subvariavel>)
