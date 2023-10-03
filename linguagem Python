@@ -1,0 +1,40 @@
+print("Hello, word!") /imprimir algo na tela;
+
+===Variaveis===
+<var> = input(<algo>) /colocar algo na var
+print("...{}..{}.".format(<var>, <var>)) /faz com que a var seja imprimida 
+print(<var1>, <var2>, <var3>) /imprime var
+
+===tipos primitivos===
+int /inteiro
+float /ponto flutuante ({:.nf})
+bool /logicos, boleanos
+str /strings
+
+===numeros===
+<var> = int(input('')) /recebe um numero inteiro
+ os "numeros" no pint
+
+===saber qual o tipo===
+print(<var>, is...()) \tipo uma bibli.
+isalpha(): Verifica se todos os caracteres da string são letras do alfabeto (não inclui espaços ou números).
+isdigit(): Verifica se todos os caracteres da string são dígitos numéricos (0 a 9).
+isalnum(): Verifica se todos os caracteres da string são alfanuméricos, ou seja, letras (alfabeto) ou números.
+islower(): Verifica se todos os caracteres da string estão em minúsculas.
+isupper(): Verifica se todos os caracteres da string estão em maiúsculas.
+isspace(): Verifica se a string consiste apenas em espaços em branco (espaços, tabulações, quebras de linha, etc.).
+
+===operações aritmétricas===
++ /adição
+- /subtração
+* /mult
+'/' /divisão
+** /potenciação
+'//' /divisão inteira
+% /modulo, resto da divisão
+
+---line---
+print('...'.format(<var>), end='') /não quebrar linha
+\n /quebra a linha
+
+
