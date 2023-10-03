@@ -32,9 +32,13 @@ isspace(): Verifica se a string consiste apenas em espaços em branco (espaços,
 ** /potenciação
 '//' /divisão inteira
 % /modulo, resto da divisão
+sqrt() /raiz quadrada
 
 ---line---
 print('...'.format(<var>), end='') /não quebrar linha
 \n /quebra a linha
 
-
+===módulos===
+import<biblio> /importa tudo na biblio
+form<biblio>import<obj>,<obj>
+biblio."..." /maneira de ultili\ar a biblio
