@@ -41,6 +41,17 @@ sqrt() /raiz quadrada
 print('...'.format(<var>), end='') /não quebrar linha
 \n /quebra a linha
 
+===for===
+for <cont> in range(n):
+  <comando>
+/termina quando a identação for quebrada
+
+===if===
+if <condição>:
+  <comando>
+/termina quando a identação for quebrada
+
+
 ===módulos===
 import<biblio> /importa tudo na biblio
 form<biblio>import<obj>,<obj>
