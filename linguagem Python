@@ -71,3 +71,24 @@ for <variavel> in range(<tipos>):
 (n) o mais padrão começa em 0 porem vai ate n-1, ou seja, coloque n+1;
 (<n>, <n1>) o padrão; se começar em 0, vai ate o numero desejado;
 (<n>, <n1>, <pulos>) faz ir de n em n numeros;
+
+===lista===
+<var> = list()
+<lista>.append('') adiciona um elemento ao final da lista, e também um indice
+<lista>.insert(i, '') adiciona um elemento no i indicado, os depois dele são atualizados (i+1)
+<lista>.pop() apaga o ultimo elemento, <lista>.pop(i) apaga o elemento daquele indice
+<lista> = list(range(i,i2)) lista com numero ordenados e automaticos
+<lista>.sort() ordenar valores, <lista>.sort(reverse=true) ordena em iverso
+lan(<lista>) mostra quanto elementos tem naquela lista
+
+for i in <lista>:
+  print('{i}') mostra o elemento
+
+for i, v in enumerate(<lista>):
+  print('{i}...{v}') o i mostra o indice e o v mostra o elemento
+
+for i in range(0, 5):
+  <lista>.append(<type>('')))
+
+a = b[:] copia os elmntos de b para a
+
