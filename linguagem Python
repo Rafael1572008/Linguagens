@@ -62,3 +62,12 @@ else:
 import<biblio> /importa tudo na biblio
 form<biblio>import<obj>,<obj>
 biblio."..." /maneira de ultili\ar a biblio
+
+===comando para===
+for <variavel> in range(<tipos>):
+   comandos
+
+---tipos---
+(n) o mais padrão começa em 0 porem vai ate n-1, ou seja, coloque n+1;
+(<n>, <n1>) o padrão; se começar em 0, vai ate o numero desejado;
+(<n>, <n1>, <pulos>) faz ir de n em n numeros;
