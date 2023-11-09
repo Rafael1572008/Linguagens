@@ -92,3 +92,7 @@ for i in range(0, 5):
 
 a = b[:] copia os elmntos de b para a
 
+===função===
+def <var>_func. (lista de parametro):
+  <prog>
+  return(res)  
