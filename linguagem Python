@@ -73,13 +73,24 @@ for <variavel> in range(<tipos>):
 (<n>, <n1>, <pulos>) faz ir de n em n numeros;
 
 ===lista===
+---estrutura
+<var> = [..., ...]
+<var> = "..."
 <var> = list()
+
+---add---
 <lista>.append('') adiciona um elemento ao final da lista, e também um indice
 <lista>.insert(i, '') adiciona um elemento no i indicado, os depois dele são atualizados (i+1)
-<lista>.pop() apaga o ultimo elemento, <lista>.pop(i) apaga o elemento daquele indice
+
+---apagar---
+<lista>.pop() apaga o ultimo elemento
+<lista>.pop(i) apaga o elemento daquele indice
+
+
 <lista> = list(range(i,i2)) lista com numero ordenados e automaticos
+
 <lista>.sort() ordenar valores, <lista>.sort(reverse=true) ordena em iverso
-lan(<lista>) mostra quanto elementos tem naquela lista
+len(<lista>) mostra quanto elementos tem naquela lista
 
 for i in <lista>:
   print('{i}') mostra o elemento
