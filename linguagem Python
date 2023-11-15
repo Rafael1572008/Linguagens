@@ -76,7 +76,7 @@ for <variavel> in range(<tipos>):
 ---estrutura
 <var> = [..., ...]
 <var> = "..."
-<var> = list()
+<var> = list() lista vazia
 
 ---add---
 <lista>.append('') adiciona um elemento ao final da lista, e também um indice
