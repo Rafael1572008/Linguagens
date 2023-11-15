@@ -42,9 +42,13 @@ print('...'.format(<var>), end='') /não quebrar linha
 \n /quebra a linha
 
 ===for===
-for <cont> in range(n):
+for <cont> in range(<type>):
   <comando>
 /termina quando a identação for quebrada
+
+---<type>---
+(i, f):i = inicio, f = fim
+(i, f, p):i = inicio, f = fim, p = passo
 
 ===if===
 if <condição>:
