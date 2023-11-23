@@ -126,3 +126,27 @@ def mensagem(msg)
    print("----")
 
 mensagem("...")
+
+===string===
+
+---fatiamneto---
+<var>[n:n1] pega de um inde e aoutro indice de uma string
+<var>[n:n1:p] sendo p uma variavel de pulo
+
+---analise---
+len(<var>) temanho
+<var>.count('<letra>') conta quantas vezes aparece  letra
+<var>.find('mini frase') mostra emque momento cmc a mini frase, -1 para se a mini frase não existir na frase
+''frase in <var>: boleano
+
+---transformação---
+<var>.replace('mini frase da frase', 'nova mini frase') altera o q esta dentro da string
+<var>.upper() transforma tudo em MAIUSCULO
+<var>.lower() transforma tudo em minuscula()
+<var>.capitalize() colocar tudo em minusculo, menos o de indice 0
+frase.strip() remove espacos inulteis, do cmc e do final
+
+---divisão---
+<varf>.split() divide a frase en relação aos espacos
+
+---junção---
