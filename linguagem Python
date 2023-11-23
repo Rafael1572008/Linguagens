@@ -150,3 +150,4 @@ frase.strip() remove espacos inulteis, do cmc e do final
 <varf>.split() divide a frase en relação aos espacos
 
 ---junção---
+print(<var> + <var2>)
