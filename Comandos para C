@@ -189,3 +189,13 @@ struct <novo_tipo>{
 };
 
 typedef <tipo> <novo_nome>; /Renomeia uma identificador
+
+===Função===
+<tipo> <nome_da_func>(<parametro>){
+	<prog>;
+	return <informação>;
+}
+
+<var> = func_(<parametro iniciais>) /se tiver retorno
+
+<tipo> <nome_da_func>(<parametro>); /diz a maquina que ogo ds do main, tem ua função que pode ser usada. prototipo de função.
