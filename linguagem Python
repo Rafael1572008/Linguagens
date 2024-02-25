@@ -41,6 +41,15 @@ sqrt() /raiz quadrada
 print('...'.format(<var>), end='') /não quebrar linha
 \n /quebra a linha
 
+if..elif..else (se..senão..senão se)
+
+if <condição>:
+       <pront>
+elif <condição>:
+       <pront>
+else:
+       <pront>
+
 ===for===
 for <cont> in range(<type>):
   <comando>
