@@ -41,15 +41,6 @@ sqrt() /raiz quadrada
 print('...'.format(<var>), end='') /não quebrar linha
 \n /quebra a linha
 
-if..elif..else (se..senão..senão se)
-
-if <condição>:
-       <pront>
-elif <condição>:
-       <pront>
-else:
-       <pront>
-
 ===for===
 for <cont> in range(<type>):
   <comando>
@@ -84,6 +75,13 @@ for <variavel> in range(<tipos>):
 (n) o mais padrão começa em 0 porem vai ate n-1, ou seja, coloque n+1;
 (<n>, <n1>) o padrão; se começar em 0, vai ate o numero desejado;
 (<n>, <n1>, <pulos>) faz ir de n em n numeros;
+
+---while---
+while <condição>:
+       <pront>
+
+for <variável> in <lista> :
+       <Bloco de comandos >
 
 ===lista===
 
