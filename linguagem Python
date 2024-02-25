@@ -77,14 +77,17 @@ for <variavel> in range(<tipos>):
 (<n>, <n1>, <pulos>) faz ir de n em n numeros;
 
 ===lista===
----estrutura
-<var> = [..., ...]
-<var> = "..."
-<var> = list() lista vazia
 
----add---
-<lista>.append('') adiciona um elemento ao final da lista, e também um indice
-<lista>.insert(i, '') adiciona um elemento no i indicado, os depois dele são atualizados (i+1)
+.len(L): retorna o tamanho da lista.
+.append(""), .insert(i , "") adiciona um novo valor na no final da lista.
+.pop(i) apagar no indice
+sort(): ordena em ordem crescente
+
+
+---estrutura---
+<var> = []
+
+
 
 ---apagar---
 <lista>.pop() apaga o ultimo elemento
@@ -151,3 +154,15 @@ frase.strip() remove espacos inulteis, do cmc e do final
 
 ---junção---
 print(<var> + <var2>)
+
+===Dicionario===
+Nome_dicionario = { chave1 : valor1,
+                    chave2 : valor2,
+                    ...............,
+                    chaveN : valorN}
+
+del("Feijao") :Exclui um item informando a chave.
+keys(): Obtém as chaves de um dicionário.
+values(): Obtém os valores de um dicionário.
+
+print(d["<elemento>"])
