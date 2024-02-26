@@ -59,6 +59,7 @@ form<biblio>import<obj>,<obj>
 biblio."..." /maneira de ultili\ar a biblio
 
 ===comando para===
+
 for <variavel> in range(<tipos>):
    comandos
 
@@ -86,6 +87,7 @@ sort(): ordena em ordem crescente
 ===função===
 def <namefunc>():
   <prog>
+return <var>
 
 ---def editvel por programa---
 def func(<var que vai receber>)   \pode ser masi de uma, (<var1>, <var2>, ..., <varN>). para que ele receba a variavel, o camando tem que ser estritamente igual a o da função
@@ -132,3 +134,9 @@ keys(): Obtém as chaves de um dicionário.
 values(): Obtém os valores de um dicionário.
 
 print(d["<elemento>"])
+
+
+=====================orientação a objeto=============
+metodo construtor
+
+def __init__(self,[parametros])
