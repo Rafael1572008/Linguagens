@@ -137,6 +137,13 @@ print(d["<elemento>"])
 
 
 =====================orientação a objeto=============
-metodo construtor
+Classe
 
-def __init__(self,[parametros])
+Classe <Nclasse>:
+   <vatr> = n
+def metodo_de_construção:
+   Codigo metodo construtor
+def metodo(self, [parametros])
+    self.membro = valor
+
+self.<var> é usado para deixar como uma variavel global
