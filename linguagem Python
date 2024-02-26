@@ -41,15 +41,6 @@ sqrt() /raiz quadrada
 print('...'.format(<var>), end='') /não quebrar linha
 \n /quebra a linha
 
-===for===
-for <cont> in range(<type>):
-  <comando>
-/termina quando a identação for quebrada
-
----<type>---
-(i, f):i = inicio, f = fim
-(i, f, p):i = inicio, f = fim, p = passo
-
 ===if===
 if <condição>:
   <comando>
@@ -90,32 +81,7 @@ for <variável> in <lista> :
 .pop(i) apagar no indice
 sort(): ordena em ordem crescente
 
-
----estrutura---
 <var> = []
-
-
-
----apagar---
-<lista>.pop() apaga o ultimo elemento
-<lista>.pop(i) apaga o elemento daquele indice
-
-
-<lista> = list(range(i,i2)) lista com numero ordenados e automaticos
-
-<lista>.sort() ordenar valores, <lista>.sort(reverse=true) ordena em iverso
-len(<lista>) mostra quanto elementos tem naquela lista
-
-for i in <lista>:
-  print('{i}') mostra o elemento
-
-for i, v in enumerate(<lista>):
-  print('{i}...{v}') o i mostra o indice e o v mostra o elemento
-
-for i in range(0, 5):
-  <lista>.append(<type>('')))
-
-a = b[:] copia os elmntos de b para a
 
 ===função===
 def <namefunc>():
@@ -129,13 +95,6 @@ def func(<var que vai receber>)   \pode ser masi de uma, (<var1>, <var2>, ..., <
 
 func(...)
 -----------------------------
-Ex:
-def mensagem(msg)
-   print("----")
-   print(msg)
-   print("----")
-
-mensagem("...")
 
 ===string===
 
