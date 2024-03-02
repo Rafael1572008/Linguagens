@@ -22,6 +22,7 @@ class Moto(Veiculo):
         self.cilindrada = cilindrada
 
     def info(self):
-        return super.info() + f"Cilindrada: {self.cilindrada}"
+        return super().info() + f"\nCilindrada: {self.cilindrada}"
     
-itapava = Moto("itaipava", 2018, )
+chevolet = Carro("Tesla", 2023, 40000, 3, "629(WLTP)")
+print(chevolet.info())
