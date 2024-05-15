@@ -1,0 +1,6 @@
+Bem parecida com c;
+i*inicializar var, nem que seja com 0;
+
+let /var local;
+var /global;
+const /constante;
