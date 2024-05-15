@@ -1,0 +1,188 @@
+===Estrutura===
+<!DOCTYPE html>
+ <html>
+ <head> 
+	<title>Título da página</title> (titulo na aba)
+ 	<meta charset="utf-8"/>
+ </head>
+ <body> 
+
+</body> 
+</html> 
+
+===Comandos paragrafos===
+<p></p> – Principal tag de texto, compõe um parágrafo;
+<b></b> – Transforma o conteúdo em negrito;
+<i></i> – Transforma o conteúdo em itálico;
+<br/> – Essa tag não necessita de fechamento, ela executa a função de quebra de linha.
+<hr/> – Essa tag não necessita de fechamento, ela forma uma linha horizontal.
+<font color="green">verde</font> - Muda a cor da fonte para verde
+<body text="blue"> - muda a cor do corpo para azul
+<font face="arial">arial</font>muda o tipo de fonte para Arial.
+<font size=4> Altera o tamanho da fonte para 4
+<body bgcolor="yellow"> - Altera a cor do fundo para amarelo
+<center> centralizar
+
+===lista===
+<ul> lista desordenada
+<ol> lista ordenada
+<dl>
+  <dt>titulo do recuo
+   <dd> texto recuado
+
+===Link===
+<a href="link"_blank">nome do q vai aparece</a> colocar link
+<body link=“cor" vlink=“cor" alink=“cor"> alterar cor do link dentro do body
+
+===imagem===
+<img src=“url.gif"> imagem
+<img src="url.jpeg" title="titulo"> imagem com tiulo
+<a href="url"_blank" ><img src='mae.jpeg' ></a> imagem com link
+<img src='url.jpeg’ title="titulo" height=42 wight=42 > width: largura, height: aultura
+<img src="mae.jpeg" border=4 > borda na imegm
+< img src="img" alt="gatoo height=100px> ajuta para o tamanho da imagem original
+<link rel="icon" href="sinete.png"> /colocar imgame na aba
+
+===tabelas====
+entre os <body>
+<table> tabela
+<tr> comeco de cada linha horizontal (qaunto masi <tr>, mais linhas)
+<td> cmc com cada conjunto de daos(quanto mais <td> mais longa a linha e)
+<table border = 1> bordas na tabela
+<table border = 1 bgcolor="pink"> mudar de cor
+<tr bgcolor="red"> mudar de cor só a celula
+<tr align="center"> centralizar o que esta dentro da celula
+<td colspan="2"> o quanto aquela celula vai ocupar horizontamente
+<th rowspan="2"> o quanto aquela celula vai ocupar verticamente
+<caption> tirulo da tabela (fora)
+
+===formulario===
+<form> cria um fomulario
+-<input> - Define um campo de entrada de dados.
+ <textarea> - Define uma área de texto, podendo conter diversas linhas de texto.
+ <button> - Define um botão.
+ <select> - Define uma lista selecionável, também conhecida como drop-down.
+ <option> - Define uma lista de opções dentro de um drop-down.
+ <optgroup> - Define um grupo de opções.
+ <fieldset> - Define um grupo de campos.
+ <label> - Define um rótulo ou legenda para um campo ou controle do formulário.
+ <output> - Define elementos de saída para o formulário.
+ <legend> - Define um título para o conjunto de campos.
+<input type="tipos" name="da um nome">
+<input type="type" name="nome" placeholder="nomear, porem desaparece quando e algo e feito">
+site dos tipos de input
+   url(chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://eadcampus.spo.ifsp.edu.br/pluginfile.php/1017103/mod_resource/content/1/HTML_Aula6_Formularios.pdf)
+<input type="submit"> enviar
+
+===CSS===
+===Caixas no css===
+///margin/// /margem
+///border/// /borda
+///padding/// /preenchimento
+///content/// /conteúdo
+----repete----
+
+
+<style> dentro da tag <herd>
+   ---paragrafo---
+   p{color: green;} exemplo do css
+   font-family /altera a font
+   tipos de font url(chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://eadcampus.spo.ifsp.edu.br/pluginfile.php/1018508/mod_resource/content/1/AW1_CSS_Parte1.pdf)
+   color:cor ou #00000 /dar cor
+   text-align: right; deixar o texto a direita da tela
+   line-height: 15px; /* tamanho da altura de cada linha */ 
+   letter-spacing: 50px; /* tamanho do espaço entre cada letra */ 
+   word-spacing: 60px; /* tamanho do espaço entre cada palavra */ 
+   text-indent: 30px; /* tamanho da margem da primeira linha do texto */ 
+   font-weight:bold; /deixa a letra mais grossa
+   text-align: center; /centralizar o texto
+   background-color: cor; /cor de texto
+   line-height: 500px; /define a altura do texto
+
+
+   ---imagem---
+   background-image:url(url.jpeg); /colocar imagem no css
+   background-attachment:fixed; /deixa a imagem fixa
+   background-size: contain; /imagem se adapta quando rola
+   background-repeat:no-repeat; /imagem não repete
+   background-repeat:repeat; /imagem repete
+   background-repeat:repeat-x; /imagem repete na horizontal
+   background-repeat:repeat-y; /imagem repete na vertical
+   background-position:...; /config a posilçao da imagem
+   background-size: cover; /adapta a imagem a janela, porem cortada
+   background-position: center; /posiciona a imagem no centro
+   img:hover{-webkit-transform: scale(0.5) /transforma o tamanho da imagem ao passar o mouse
+   img:hover{-webkit-filter: blur(5px);} /bora imagem ao passar o mouse
+   img:hover{-webkit-filter: drop-shadow(15px 10px 5px rgba(245, 0, 0, 0.979));} /criar sombras ao passar o mouse
+   img:hover{border: 10px solid #136497; border-radius: 50%;} /cria borda ao passar o mouse
+
+   ---ajustar div---
+   div /criar caixas
+   div { height: 100px; width: 100px;display: inline-block} /coloca a proxima div ao lado
+   margin: 20px 10px 20px 30px /A margem
+   padding: 200px; /Area da div
+   box-shadow: 10px 20px grey; /sombra na div
+   margin:auto; /Centraliza a margem.
+   flot: right ou left; /deixa as div`s em apenas um linha (do lado direito ou do lado esquerdo [estão flutuando])
+   clear:left; /"limpar ou desativa" o modo de div flutuante
+   top: Npx; ajusta a distancia entre o top ate o elemento
+   position: ; ajusta o posicionamento do objeto em relação a sua oringem
+   z-index: n; /faz como se fosse postit, bloco em cima de bloco, quanto maior o numero, mais em cima ela ficara 
+
+   ---borda--- 
+   border: 1px solid red; /Espesura da borda e sua cor
+   border-width: 1px 2px 1px 2px; /Dimenssões da borda
+   border-style: dotted solid; /Tipo de borda
+   background-color: #48CFE0; /cor do que esta dentro da borda
+   -tipos de bordas url(https://eadcampus.spo.ifsp.edu.br/pluginfile.php/1019712/mod_resource/content/1/AW1_CSS_ModeloCaixa.pdf)
+   border-radius: 200px; /Arredondamento de cantos da borda
+   border-image: url("url.png") 30 round; /colocar imagem na ponta da borda
+   border-width: thin ou thick /deixa com uma borada fina, porem q ocupa uma área maior (uma boa área invisivel)
+   border-style: dotteed solid; /A propriedade border-style define o estilo da borda do elemento. Pode ser solid (sólida), dotted (pontilhada) ou dashed (tracejada).
+
+   ---link---
+   a:link {color:cor;} /Links visitados
+   a:visited {color:red;} /Links hover, passa o cursor por cima
+   a:hover {color:yellowgreen;} /Links ativos, clica e segura
+   a:active {color:blue;} /Link selecionado
+   a{Padding:5px 10px; text-decoration:none;} /colocar os links separados
+
+
+
+   ---filtros---
+   filter: filtro(10%)
+   •grayscale()
+   •blur()
+   •brightness()
+   •contrast()
+   •invert()
+   •opacity()
+   •saturate()
+   •sepia()
+   •hue-rotate()
+   •drop-shadow()
+
+   ---curso---
+   cursor: /muda o tipo de cursor
+
+
+   ---Layout2---
+///    header           ///
+///      /
+Nav    content (main)   ///
+///      /
+///    footer          ///
+
+header: Ex: nome da empresa, contato, menu de navegação.
+nav:Ex: Ações principais do site, dificilmente é alterada quando muda de página.
+footer:Ex: Pode colocar o mesmo em todas as páginas ou em cada uma colocar um diferente.
+content:Ex: Conteúdo principal do site.
+
+<section>: Agrupa conteúdo relacionado, criando seções temáticas na página.
+<article>: Define um conteúdo independente e completo, como uma postagem de blog ou notícia.
+<aside>: Contém conteúdo relacionado, mas secundário em relação ao conteúdo principal da página, como uma barra lateral ou anúncio.
+<span>: Elemento em linha para estilização de conteúdo sem significado próprio.
+
+   ---ajuste dentro do layout2---
+   {column-count:2;} /colocar em duas colunas
+   #cabecalho{} /id pode ser usado apenas uma vez (ex: <main id="cabecalho">
