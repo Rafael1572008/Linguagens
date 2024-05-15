@@ -10,3 +10,19 @@ if (condição¹ && condição²){
   ...
 else
   ...
+
+===switch===
+switch (<var>) {
+   case <v1>:
+      [comando]
+      break;
+   case <v2>:
+      [comando]
+      break;
+   case <v3>:
+      [comando]
+      break;
+   ...
+   case <vn>:
+      [comando]
+      break;
