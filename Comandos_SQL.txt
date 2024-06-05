@@ -1,0 +1,40 @@
+CREATE DATABASE <nome>              |
+DEFAULT CHARACTER SET utf8mb4       |/Cria um banco de dados, com acentuação brasileir
+DEFAULT COLLATE utf8mb4_general_ci; |
+
+drop database cadastro; /Execluir um banco de dados(tem que execultar em outro arquivo)
+
+create table pessoa (Elementos); /Cria um tablela em um banco de dados
+
+Tipos Primiivos:
+Numéricos:
+	INT: Um número inteiro de tamanho regular.
+	SMALLINT: Um número inteiro menor.
+	BIGINT: Um número inteiro maior.
+	TINYINT: Um número inteiro muito pequeno(3).
+	MEDIUMINT: Um número inteiro de tamanhoe médio.
+	DECIMAL: Um número decimal com precisão definida.
+	FLOAT: Um número de ponto flutuante com precisão simples.
+        DOUBLE e REAL: Números de ponto flutuante com precisão dupla.
+
+Data/Tempo:
+	DATE: Data (ano, mês, dia).
+	TIME: Hora (hora, minuto, segundo).
+	DATETIME: Combinação de data e hora.
+	TIMESTAMP: Data e hora com fuso horário, geralmente usado para marcação temporal.
+        YEAR: Ano.
+
+Literais (Caracteres):
+	CHAR: Cadeia de caracteres de comprimento fixo.
+	VARCHAR: Cadeia de caracteres de comprimento variável.
+	TEXT: Texto de comprimento variável, maior que VARCHAR.
+        BLOB: Binário de dados grandes, usado para armazenar dados binários.
+
+Espaciais:
+	GEOMETRY: Tipo de dados espacial genérico.
+	POINT: Um ponto em um espaço 2D.
+	LINESTRING: Uma linha composta de um ou mais pontos.
+	POLYGON: Um polígono, que é uma área fechada definida por uma série de pontos.
+
+not null /Não permite que a "variável" esteja vazia
+PRIMARY KEY(PK) /Define qual é a chave primaria
