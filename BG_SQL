@@ -3,8 +3,35 @@ DEFAULT CHARACTER SET utf8mb4       |/Cria um banco de dados, com acentuação b
 DEFAULT COLLATE utf8mb4_general_ci; |
 
 drop database cadastro; /Execluir um banco de dados(tem que execultar em outro arquivo)
-
 create table pessoa (Elementos); /Cria um tablela em um banco de dados
+not null /Obriga a digitar algo
+PRIMARY KEY(PK) /Define qual é a chave primaria
+
+INSERT INTO pessoa                      |
+(<var1>, <var2>, <var3>, ...)           | /Inserir dados em um BG
+values                                  |
+('<Rvar1>', '<Rvar2>', '<Rvar3>', ...); |
+
+INSERT INTO pessoa                      |
+(<var1>, <var2>, <var3>, ...)           | 
+values                                  |
+('<Rvar1>', '<Rvar2>', '<Rvar3>', ...), | /Inserir multiplos dados em um BG
+('<Rvar1>', '<Rvar2>', '<Rvar3>', ...), |
+('<Rvar1>', '<Rvar2>', '<Rvar3>', ...); |
+
+(DEFAULT '<padrão>'); /Valores nuços dessa var iram receber o default
+CHECK( <var> in (‘<var1>’, ‘<var2>’, ... '<varN>')) /restringir tais valores
+
+UNIQUE /Evita valores duplicados
+desc /descrição da tebela, Prog
+
+Integridade Referencial(FOREIGN KEY):
+
+(FOREIGN KEY (<var1>) REFERENCES | /<var1>: Variável do banco de dados que vai referenciar, <Fk>: Chave estrangeira(chave primaria de outra tabela)
+departamento(<FK>))              |Precisasse definir as duas chaves primarias
+
+
+
 
 Tipos Primiivos:
 Numéricos:
@@ -35,6 +62,3 @@ Espaciais:
 	POINT: Um ponto em um espaço 2D.
 	LINESTRING: Uma linha composta de um ou mais pontos.
 	POLYGON: Um polígono, que é uma área fechada definida por uma série de pontos.
-
-not null /Não permite que a "variável" esteja vazia
-PRIMARY KEY(PK) /Define qual é a chave primaria
