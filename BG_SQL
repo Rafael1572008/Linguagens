@@ -1,11 +1,57 @@
+---Chaves:
+PRIMARY KEY(PK) /Define qual é a chave primaria, no final
+
+FOREIGN KEY (<var1>) REFERENCES | /<var1>: Variável do banco de dados que vai referenciar, <Fk>: Chave estrangeira(chave primaria de outra tabela)
+departamento(<FK>))              |Precisasse definir as duas chaves primarias
+
+
+==============================================================
+
+
+---DDL (Data Definition Language):
+
 CREATE DATABASE <nome>              |
 DEFAULT CHARACTER SET utf8mb4       |/Cria um banco de dados, com acentuação brasileir
 DEFAULT COLLATE utf8mb4_general_ci; |
 
 drop database cadastro; /Execluir um banco de dados(tem que execultar em outro arquivo)
+
 create table pessoa (Elementos); /Cria um tablela em um banco de dados
-not null /Obriga a digitar algo
-PRIMARY KEY(PK) /Define qual é a chave primaria
+
+DROP TABLE <n_table> \Apagra tabela
+
+ALTER TABLE <n_table>         | /Cria uma coluna no final
+ADD COLUMN <n_column> <tipo>; |
+
+ALTER TABLE <n_table>     | /Apagar coluna
+DROP COLUMN <n_column>;   |
+
+ALTER TABLE <n_table>               | /Cria uma coluna na primeira possição
+ADD COLUMN <n_column> <tipo> FIRST; |
+
+ALTER TABLE <n_table>               | /Adicionar como chave primária
+ADD PRIMARY KEY(<n>);               |
+
+ALTER TABLE <n_table>                | /Modificar o tipo da coluna
+MODIFY COLUMN <n_column> <new_tipo>; |
+
+ALTER TABLE <n_table>                           | /Alterar o nome e o tipo
+CHANGE COLUMN <n_column> <new_name> <new_tipo>; |
+
+ALTER TABLE <n>       |/Renomear tabela
+RENAME TO <new_name>; |
+
+
+(DEFAULT '<padrão>'); /Valores nuços dessa var iram receber o default
+CHECK( <var> in (‘<var1>’, ‘<var2>’, ... '<varN>')) /restringir tais valores
+UNIQUE /Evita valores duplicados
+UNSIGNED /Não permite sinal, economizando bits
+
+
+==============================================================
+
+
+---DML (Data Manipulation Language):
 
 INSERT INTO pessoa                      |
 (<var1>, <var2>, <var3>, ...)           | /Inserir dados em um BG
@@ -19,18 +65,22 @@ values                                  |
 ('<Rvar1>', '<Rvar2>', '<Rvar3>', ...), |
 ('<Rvar1>', '<Rvar2>', '<Rvar3>', ...); |
 
-(DEFAULT '<padrão>'); /Valores nuços dessa var iram receber o default
-CHECK( <var> in (‘<var1>’, ‘<var2>’, ... '<varN>')) /restringir tais valores
 
-UNIQUE /Evita valores duplicados
+select * from <n_table>; /mostra a tabela
+
+DROP TABLE <n_table> /Apagar Tabela
+
 desc /descrição da tebela, Prog
 
-Integridade Referencial(FOREIGN KEY):
 
-(FOREIGN KEY (<var1>) REFERENCES | /<var1>: Variável do banco de dados que vai referenciar, <Fk>: Chave estrangeira(chave primaria de outra tabela)
-departamento(<FK>))              |Precisasse definir as duas chaves primarias
+==============================================================
 
 
+   Icrementos
+not null /Obriga a digitar algo
+
+
+==============================================================
 
 
 Tipos Primiivos:
