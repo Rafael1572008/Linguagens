@@ -85,7 +85,8 @@ where <PK> = <id_line>; |
 
 TRUNCATE TABLE <table>; |/Apaga todos os registros
 
-==selection===
+
+---DQL:
 '*' /seleciona todos
 
 select * from <n_table>        |/orndena pela coluna, ordem alfabetica, (desc) opicional, só para ordenar em ordem alfabetica descrecente
@@ -94,9 +95,35 @@ order by <column> (desc):      |
 select <n_column>, <n_column>, <n_column> from <table> |/filtra colunas pelo <column>, mostrand oa penas as <n_column>
 order by <column>;                                     |
 
-select * from <n_table>       |
-where <n_line> = '<registro>' |/filtra linhas, 
-order by <column>;            |
+select * from <n_table>                             |
+where <n_cloumn> <operador relacional> '<registro>' |/filtra linhas
+order by <column>;                                  |
+
+===operadores relacionais===
+=
+!=
+=>
+<=
+betwenn '<cond>' and <cond2>;
+in ('<cond>', '<cond2>', <cond3>);
+<column> > '<cond>' and/ou <column2> < <cond2>; |exemplo
+like '<first_word>%'; |Filtra pela primeira letra selecionada. like = parecido.trocando o porcento, voce ver as teminações daletra selecionada, deixando % em ambos os lados, mostra todos os registros a letra selecionada
+not like
+============================
+
+select distinct <n_column> from <n_table>; /Mostra todos os registros, sem repetições
+
+select function(<n_column>) form <n_table>;
+
+===function===
+COUNT() /Contar as ocorrencias
+MAX() /O maior
+MIN() /mínimo
+SUM() /somar
+AVG() /média
+
+
+
 ==============================================================
 
 
