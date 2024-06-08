@@ -1,4 +1,4 @@
----Chaves:
+   Chaves:
 PRIMARY KEY(PK) /Define qual é a chave primaria, no final
 
 FOREIGN KEY (<var1>) REFERENCES | /<var1>: Variável do banco de dados que vai referenciar, <Fk>: Chave estrangeira(chave primaria de outra tabela)
@@ -72,7 +72,31 @@ DROP TABLE <n_table> /Apagar Tabela
 
 desc /descrição da tebela, Prog
 
+UPDATE <n_column>           |
+SET <n_column> = 'new_name' |/Trocar valor na tabela
+where <PK> = 'id_line';     |
 
+UPDATE <n_column>                                          |
+SET <n_column> = 'new_name', <n_column2> = <new_column2>   |/Trocar valores na tabela
+where <PK> = 'id_line';                                    |
+
+delete from <n_table>   |/apagar linha desejada
+where <PK> = <id_line>; |
+
+TRUNCATE TABLE <table>; |/Apaga todos os registros
+
+==selection===
+'*' /seleciona todos
+
+select * from <n_table>        |/orndena pela coluna, ordem alfabetica, (desc) opicional, só para ordenar em ordem alfabetica descrecente
+order by <column> (desc):      |
+
+select <n_column>, <n_column>, <n_column> from <table> |/filtra colunas pelo <column>, mostrand oa penas as <n_column>
+order by <column>;                                     |
+
+select * from <n_table>       |
+where <n_line> = '<registro>' |/filtra linhas, 
+order by <column>;            |
 ==============================================================
 
 
