@@ -1,3 +1,28 @@
+=============================Modelo Relacional===========================
+entidade: é uma representação de um conjunto de informações sobre determinado conceito do sistema
+Atributo: propriedades que descrevem cada membro de um conjunto de entidades
+
+Cardinalidade(0, 1, 2): le uma das parte, e do extremo, le a cardinalidade junto com a outra entidade colada nela
+
+Relacionamentos de 1-para-1 é uma troca de chaves
+Relacionamento de 1-para-muitos, pega a PK de 1 e joga para muitos
+Relacionamento de muitos-para-muitos, o relacioanamento vira uma entidade, criando pequenas entidades 1-para-muitos, seguindo a regrade 1-para-muitos
+
+---4 principais regras de transações em um DB
+Atomicidade: Tudo ou nada. Se qualquer parte da transação falhar, toda a transação é revertida.
+
+Consistência: Estados válidos. A transação leva o banco de dados de um estado consistente a outro, preservando regras de integridade.
+
+Isolamento: Independência. Transações simultâneas não se afetam, como se fossem executadas uma após a outra.
+
+Durabilidade: Persistência. Após a confirmação, os resultados da transação são permanentes e sobrevivem a falhas.
+
+chave multipla = chave estrangeira
+
+Não podemos apagar um registro que esta em relacionamento
+======================================================================
+
+
    Chaves:
 PRIMARY KEY(PK) /Define qual é a chave primaria, no final
 
@@ -47,6 +72,18 @@ CHECK( <var> in (‘<var1>’, ‘<var2>’, ... '<varN>')) /restringir tais val
 UNIQUE /Evita valores duplicados
 UNSIGNED /Não permite sinal, economizando bits
 
+alter table <n_table>             |
+add foreign key <n_column>        |/Transforma tal coluna em uma chave estrangeira, lembrando que a chave primaira desta devera existir
+references <n_table2> <id_table2>;|
+
+select <n_table>.<n_column>, <n_table>.<n_column2>, <n_table2>.<n_table>, <n_table2>.<n_column2> |
+from <n_table> inner join <n_table2>                                                             |/mostra as colunas escolidas de cada tabela que estao em relacionamento, deixa bonito
+on <n_table>.<PK> = <n_table2>.<PK>;                                                             |
+
+Podemos trocar inner join por:
+left outer /mostra as colunas escolidas de cada tabela que estao em relacionamento ou não, dando preferencia a esquerda(pode ser trocada por right), deixa bonitinho
+
+
 
 ==============================================================
 
@@ -76,7 +113,7 @@ UPDATE <n_column>           |
 SET <n_column> = 'new_name' |/Trocar valor na tabela
 where <PK> = 'id_line';     |
 
-UPDATE <n_column>                                          |
+UPDATE <n_table>                                           |
 SET <n_column> = 'new_name', <n_column2> = <new_column2>   |/Trocar valores na tabela
 where <PK> = 'id_line';                                    |
 
@@ -113,7 +150,7 @@ not like
 
 select distinct <n_column> from <n_table>; /Mostra todos os registros, sem repetições
 
-select function(<n_column>) form <n_table>;
+select function(<n_column>) from <n_table>;
 
 ===function===
 COUNT() /Contar as ocorrencias
