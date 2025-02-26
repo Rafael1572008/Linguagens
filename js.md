@@ -68,3 +68,34 @@
 - `document.querySelector(".minhaClasse").style.color = "green";` → Classe → .
 - `elemento.innerText = "Novo Texto";` → Modifica o texto visível
 - `elemento.innerHTML = "<strong>Novo Conteúdo</strong>";` → Modifica o conteúdo HTML
+
+## 📌 Eventos
+Evento é tudo aqulo que pode acontecer com essa div
+
+- Evento com mouse:
+---Mouseenter -> mouse entra na div
+---mousemove -> Mouse se movimenta na div
+---mousedown -> evento de pegar
+---mouseip -> evento de soltar
+---click
+---mouseout -> mouse fora da div
+
+## 📌 Funções
+So iram ser execultadas quando o evento ocorrer
+- <div id="area" onclick="clicar()"> -> exemplo
+
+- 'function acao(param){
+-  '<COD>'
+}'
+
+### 📌 Ouvidores
+Eles ficam prestando atenção no evento, dispensão a nessecidade de
+colcoar a funçõa ("on<event>") na tag
+
+- '<var>.addEventListener("<event_name>", "<function_name>")'
+
+### ERROS
+- Console do DOM (navegador)
+
+## Inputs
+- '<input type="number" name="" id="">' -> pegar input tipo number
