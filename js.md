@@ -99,3 +99,11 @@ colcoar a funçõa ("on<event>") na tag
 
 ## Inputs
 - '<input type="number" name="" id="">' -> pegar input tipo number
+
+### Condições
+- `if (cond) {
+-  True
+- }else{
+-  False
+- }
+- `
