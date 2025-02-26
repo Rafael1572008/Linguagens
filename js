@@ -1,75 +1,70 @@
-alert("Menssager")   //Mostrar uma messagem de alertar. Ele esconde o conteudo (str)
+## 📌 Alertas e Diálogos
 
-comfirm("Menssager")   //Comfrimar ou cancelar menssager de alerta (str)
+- `alert("Mensagem")` → Exibe um alerta
+- `confirm("Mensagem")` → Exibe um alerta com "OK" e "Cancelar" (retorna true/false)
+- `prompt("Mensagem")` → Exibe um input e retorna o valor digitado
 
-pronpt("menssger")   //obter por menssager de alerta (str)
+## 📌 Manipulação do Documento
 
-Document.write("Menssager") ///escrever no body
-|
--> Document.write("<div>"conteudo"</div>")  ///é possivel útilza tags
+- `document.write("Mensagem")` → Escreve no body
+- `document.write("<div>Conteúdo</div>")` → Permite tags HTML
 
+## 📌 Conversão de Tipos
 
-///Formatação
-var.toFixed(n)  ///aredondar par nessima casa
+- `num.toFixed(2)` → "10.57" (Arredonda)
+- `Number.parseInt("10.56")` → 10 (Para inteiro)
+- `Number.parseFloat("10.56")` → 10.56 (Para float)
+- `Number("123")` → 123 (JS decide o tipo automaticamente)
+- `String(123)` → "123" (Para string)
+- `num.toString()` → "10.567" (Para string)
 
-Number.perseInt(n)   ///Transforma em float
+## 📌 Arrays
 
-Number.parseFloat(n)  ///INT
+- `array.length` → Retorna tamanho do array
 
-Number(n)   ///O js decide de acordo com o numero
+## 📌 Operadores
 
-String(n)  ///Transforma em string
+### Comparadores
 
-n.toString() ///para colocar str em outra var
+- `5 == "5"` → true (Compara valor, ignora tipo)
+- `5 === "5"` → false (Compara valor e tipo)
 
+### Operadores Lógicos
 
-///array
-array.lengt   ///Tamanho do array
+- `!false` → true (NOT)
+- `true && false` → false (AND)
+- `true || false` → true (OR)
 
-///Operadorees
-5 == '5' ///true tem o mesmo peso
-5 === '5' ///False, identificador restrito
+### Operador Ternário
 
-///logico
-! ///not
-&& ///and
-|| ///or
+- `var resultado = 10 > 5 ? "Maior" : "Menor";` → Retorna "Maior"
 
-///ternario
-<teste> ? <true> : <false>)
+## 📌 Template Strings
 
-///Documento
-'Menssager ${var}' //Variavel na menssagem
+- `var nome = "João"; console.log(`Olá, ${nome}!`);` → Retorna "Olá, João!"
 
+## 📌 DOM (Document Object Model)
 
-### DOM
-Documenet object model
+### Estrutura do DOM
 
-///Preciso fazera árvore dom
+- Window → [location, history, document]
+- document → [html]
+- html → [head, body]
+- head → [meta, title]
+- body → [<tags html>]
+- p → [strong]
 
-Window : [location, history, documnet]
-document : [html]
-html : [head, body]
-head : [meta, title]
-body : [<tags html>]
-p : [strong]
+### Selecionando Elementos
 
-///selecionando
-|> getElementsByTagName()[<n>] ///tag do html [<h1>, <p>]. Consigo selecionar qual é pelo índice
-   getElementById()   ///pega pelo id ('font')
-   getElementsByClassName()   ///pegar pela class
-   getElementsByName() ///pegar por nome
-   
-  
-///style no js
-<var>.style.color = 'blue' /// exemplo
-|
-///posso juntar
-     <var> = window.document.getElementsByName().style.color = 'blue'
+- `document.getElementsByTagName("h1")[0]` → Pega pelo nome da tag
+- `document.getElementById("meuId")` → Pega pelo ID
+- `document.getElementsByClassName("minhaClasse")[0]` → Pega pela classe
+- `document.getElementsByName("meuNome")[0]` → Pega pelo atributo name
 
-///Seletores
-var t = window.document.querySelector('div#<id_name>') (id = .), (class = #)
-      t.syle.color = '<color>'
+## 📌 Estilizando com JS
 
-<var.innerText> ///copiar a escrita na tag, tbm modifica
-<var.innerHTML> ///copiar o que esta na tag, tbm modifica
+- `elemento.style.color = "blue";` → Modifica a cor do elemento
+- `document.querySelector("#meuId").style.color = "red";` → ID → #
+- `document.querySelector(".minhaClasse").style.color = "green";` → Classe → .
+- `elemento.innerText = "Novo Texto";` → Modifica o texto visível
+- `elemento.innerHTML = "<strong>Novo Conteúdo</strong>";` → Modifica o conteúdo HTML
