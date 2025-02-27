@@ -184,3 +184,8 @@ do (expressao) {
     // Algorith
 } while (expresão)
 ```
+
+```for
+for (start;test;incr){
+    // algorith;
+}
