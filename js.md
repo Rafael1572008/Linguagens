@@ -174,6 +174,6 @@ switch (expressao) {
 ### repetrição
 ```while
 while(comnd){
-    ///algorith
+    //algorith
 }
 ```
