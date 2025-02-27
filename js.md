@@ -174,7 +174,8 @@ switch (expressao) {
 ### repetrição
 
 ```While
-while (condicao) {
-    // algorith
-} 
+while (expressao) {
+    // Algorith
+}
+```
 ```
