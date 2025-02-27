@@ -169,3 +169,10 @@ switch (expressao) {
 
 ### propriedas pelo js
 - `<var>.<style>.<propr>` -> Adicionar prorpiedade a varivel. caso for um propriedade com '-' a 2 segunda parte se junta com a primeria e começa com letra maiuscula (textAligh)
+
+
+### repetrição
+```while
+while(comnd){
+    ///algorith
+}```
