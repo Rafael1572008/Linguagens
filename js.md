@@ -161,3 +161,11 @@ switch (expressao) {
 - `var data = new Date();` → Retorna a data e hora atuais
 - `data.getDate();` → Retorna o dia
 - `data.getHours();` → Retorna a hora
+
+## 📌 Adicionar uma div, class (clid) no html
+- `<var>.setAttribute('<div, class>', '<name>')` -> tipo um #name ou .name. Isso seria a criação, dai vc usa var como se ele existisse no html
+- `<var>.setAttribute('<prop>', '<varl.receber>')` -> Atribuir a regra css uma propriedade
+- `<tag>.appendChild(<var>)` -> ela vai adicionar a regra css a tag no html
+
+### propriedas pelo js
+- `<var>.<style>.<propr>` -> Adicionar prorpiedade a varivel. caso for um propriedade com '-' a 2 segunda parte se junta com a primeria e começa com letra maiuscula (textAligh)
