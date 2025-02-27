@@ -175,4 +175,5 @@ switch (expressao) {
 ```while
 while(comnd){
     ///algorith
-}```
+}
+```
