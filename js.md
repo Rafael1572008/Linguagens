@@ -172,8 +172,9 @@ switch (expressao) {
 
 
 ### repetrição
-```while
-while(comnd){
-    //algorith
-}
+
+```While
+while (condicao) {
+    // algorith
+} 
 ```
