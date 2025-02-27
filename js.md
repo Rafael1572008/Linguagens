@@ -178,4 +178,9 @@ while (expressao) {
     // Algorith
 }
 ```
+
+```do-While
+do (expressao) {
+    // Algorith
+} while (expresão)
 ```
