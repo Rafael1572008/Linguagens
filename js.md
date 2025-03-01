@@ -194,7 +194,19 @@ for (start;test;incr){
 }
 ```
 
+```for in
+for (let <var in <array>){
+    // algorith
+}
+```
+ele é diferente do python, ele percorre o índice, não o conteúdo
+
 ## 📌 Variaveis compostas (array, vetor)
 Variavel composta: é uma var que tem varios elementos, cada elemento é composto por um índice e coteudo
 
-- `let <var> = [<var1>, <var2>, <varn>]`
+- `let <var> = [<var1>, <var2>, <varn>]` -> Definição
+- `<var>[i] = <var1>` -> acrescentar (ele cria o índice, caso não exista)
+- `<var>.push(<var>)` -> cria no útimo índice
+- `<var>.lengt` -> contar os elementos
+- `<vsr>.sort()` -> Ordenação, crescente
+- `<var>.indexOf(<var>)` -> ele procura o elemento e retorna o índice. Caso não exista, ele retorna -1
