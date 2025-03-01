@@ -98,8 +98,14 @@ As funções só serão executadas quando o evento ocorrer.
 ```javascript
 function acao(param) {
     // Código da função
+    return <var> //Caso nescessite
 }
+
+let <var> = acao(<argument>)
 ```
+- `function (n, m=0)` -> paramentros opcionais
+- ` let v = function(x){ \\Algorith return }`
+ 
 
 ### 📌 Ouvidores de Eventos
 
@@ -210,3 +216,7 @@ Variavel composta: é uma var que tem varios elementos, cada elemento é compost
 - `<var>.lengt` -> contar os elementos
 - `<vsr>.sort()` -> Ordenação, crescente
 - `<var>.indexOf(<var>)` -> ele procura o elemento e retorna o índice. Caso não exista, ele retorna -1
+
+## Estudar
+Arrow functions
+recursividade, função
