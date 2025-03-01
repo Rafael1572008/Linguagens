@@ -22,6 +22,8 @@
 
 - `array.length` → Retorna tamanho do array
 
+###
+
 ## 📌 Operadores
 
 ### Comparadores
@@ -190,3 +192,9 @@ do (expressao) {
 for (start;test;incr){
     // algorith;
 }
+```
+
+## 📌 Variaveis compostas (array, vetor)
+Variavel composta: é uma var que tem varios elementos, cada elemento é composto por um índice e coteudo
+
+- `let <var> = [<var1>, <var2>, <varn>]`
