@@ -120,6 +120,7 @@ Para visualizar erros, use o console do navegador (`F12` → `Console`).
 
 ```javascript
 var valor = document.getElementById("meuInput").value;
+\\Usamos o .value para pagar o que o user digitou, não útilizamos para valores que não tem um valor assosiado
 ```
 
 ## 📌 Condições
