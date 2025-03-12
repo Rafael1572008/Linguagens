@@ -106,9 +106,31 @@ let <var> = acao(<argument>)
 - `function (n, m=0)` -> paramentros opcionais
 - ` let v = function(x){ \\Algorith return }`
 
+## This
+- Em objetos, this se refereçe a instancia e pode acessar sua propriedades
+- Podemos atribuir valores no próprio escopo
+
+```Uso do this
+let <nameObject> = {
+    <firstAttribute>: <valeu>,
+    <secondAtribute>: <value>,
+    <thirdAtribute>: function () {
+      console.log(" something " + this.nome);
+    },
+    <fourthObeject>: function () {
+        console.log(this.<secondAtribute>)
+        this.idade = 69
+        console.log(this.<secondAtribute>)
+    }
+  };
+  
+  <nameObject>.<nAttribute>()
+```
+
+
 ## ArrowFunction
 
-```javascript
+```ArowFunction
 <nameFunction> = (paramets) => {
     return // Algorith
   }
