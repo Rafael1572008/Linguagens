@@ -105,7 +105,21 @@ let <var> = acao(<argument>)
 ```
 - `function (n, m=0)` -> paramentros opcionais
 - ` let v = function(x){ \\Algorith return }`
+
+## ArrowFunction
+
+```javascript
+<nameFunction> = (paramets) => {
+    return // Algorith
+  }
  
+// Outra forma
+const <nameFunction> = (a, b) => a*b
+
+console.log(<nameFunction>(a, b))
+```
+- `Deixa sintaxe mais curta`
+- `Outras coisas`
 
 ### 📌 Ouvidores de Eventos
 
