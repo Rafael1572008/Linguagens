@@ -15,7 +15,14 @@ public class Teste2 {
     }
 }
 
-
 ```
+## Estudo
+- O java é sensitive. Caso a primeira letra esteja em maiuscula, ou é classe ou é interface (nomenclatura)
+- Caso seja tudo em maiusculo, a sera uma constante
+- Caos tudo em minusculo, sera o nome de um pacote
 
-- `System.out.println("...");` Printar na tela
+
+- `System.out.println("...");` Printar na tela, Pode tirar o 'ln' para que ele não pule linha
+
+## Pacotes
+- `public class <MyClass> extends javax.swing.JFrame` Permite criar tela de app
