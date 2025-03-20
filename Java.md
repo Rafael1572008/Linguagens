@@ -17,3 +17,5 @@ public class Teste2 {
 
 
 ```
+
+- `System.out.println("...");` Printar na tela
