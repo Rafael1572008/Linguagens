@@ -75,6 +75,7 @@ public class Main {
 int idade = 30;
 String valor = Integer.toString(30);
 ```
+Observação: Em alguns casos 'to<new_TIPO>' pode ser parse, como o 'parseInt'
 
 ## Conceitos Importantes
 - **Java é case-sensitive**.
