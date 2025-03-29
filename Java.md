@@ -52,17 +52,17 @@ System.out.format("%s", <variavel>); // Para imprimir strings
 
 ### Exemplo
 ```java
-import java.util.Scanner;
+import java.util.Scanner; // lib
 
 public class Main {
     public static void main(String[] args) {
-        Scanner teclado = new Scanner(System.in);
+        Scanner teclado = new Scanner(System.in); //criacao da classe
 
-        float sal = teclado.nextFloat();
+        float sal = teclado.nextFloat(); // primeira a tribuicao
         teclado.nextLine(); // Consumir a quebra de linha
-        String name = teclado.nextLine();
+        String name = teclado.nextLine();// segunda atribuicao
 
-        System.out.format("A nota do %s é %.1f", name, sal);
+        System.out.format("A nota do %s é %.1f", name, sal); //saida
     }
 }
 ```
