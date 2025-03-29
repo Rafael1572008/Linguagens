@@ -12,7 +12,6 @@
 @since 2015-03-29
 */
 ```
-
   
 ## Layout
 
@@ -79,4 +78,5 @@ public class Main {
 
 ## Pacotes
 - `public class <MyClass> extends javax.swing.JFrame` Permite criar tela de app
+- `import java.util.Scanner;` Entradas
 
