@@ -3,8 +3,9 @@
 ## Comentarios
 - `//` Comentar linha
 - `/* */` Comentar em massa
-- `/** */` Comentario para documentação. Exemplo:
-```Java, Base
+- `/** */` Comentario para documentação.
+# Exemplo
+```Java, comentario
 /**
 @autor Rafael Pires
 @version 1.0
