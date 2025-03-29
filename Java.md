@@ -36,7 +36,7 @@ public class Teste2 {
 <TP> <var> = 3;
 
 ### Tipos primitivos
-<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.passeidireto.com%2Farquivo%2F150143979%2Ftipos-primitivos-programacao&psig=AOvVaw0bRAuOO9j8k6QH9OYvcw3C&ust=1743345008532000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKD-z63Ar4wDFQAAAAAdAAAAABAY" alt="TP">
+![TP](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.passeidireto.com%2Farquivo%2F150143979%2Ftipos-primitivos-programacao&psig=AOvVaw0bRAuOO9j8k6QH9OYvcw3C&ust=1743345008532000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKD-z63Ar4wDFQAAAAAdAAAAABAY)
 
 ## Estudo
 - O java é sensitive. Caso a primeira letra esteja em maiuscula, ou é classe ou é interface (nomenclatura)
