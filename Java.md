@@ -69,7 +69,11 @@ public class Main {
 
 ## Conversões
 ```java
-<new TIPO> <new_var> = Interger.to<NEWTIPO>(old_var)
+<new TIPO> <new_var> = Interger.to<NEWTIPO>(old_var);
+
+// Exemplo
+int idade = 30;
+String valor = Integer.toString(30);
 ```
 
 ## Conceitos Importantes
