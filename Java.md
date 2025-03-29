@@ -1,4 +1,18 @@
 ### Java
+
+## Comentarios
+- `//` Comentar linha
+- `/* */` Comentar em massa
+- `/** */` Comentario para documentação. Exemplo:
+```Java, Base
+/**
+@autor Rafael Pires
+@version 1.0
+@since 2015-03-29
+/
+```
+
+  
 ## Layout
 
 ```Java, Base
@@ -26,3 +40,4 @@ public class Teste2 {
 
 ## Pacotes
 - `public class <MyClass> extends javax.swing.JFrame` Permite criar tela de app
+
