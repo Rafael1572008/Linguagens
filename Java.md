@@ -67,6 +67,11 @@ public class Main {
 }
 ```
 
+## Conversões
+```java
+<new TIPO> <new_var> = Interger.to<NEWTIPO>(old_var)
+```
+
 ## Conceitos Importantes
 - **Java é case-sensitive**.
   - Se a primeira letra for maiúscula, pode ser uma **classe** ou **interface** (padrão de nomenclatura).
