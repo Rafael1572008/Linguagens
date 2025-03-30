@@ -97,7 +97,7 @@ Obs: - `Math.random()` Gera um numero entre 0 e 1
 
 ## Operadores
 
-## operador ternario
+### operador ternario
 ```java
 <TIPO> <var> = <cond> ? <caso_1> : <caso_2>; //Atribuição a <var>
 ```
@@ -114,6 +114,13 @@ Obs: O conteudo pode ser igual, mas a estrutura e diferente. O metodo `equals` s
 - `<var1> != <var2>` Diferença
 
 
+## Operador Logico
+- `&&` and
+- `||` or
+- `^` caso tenha uma comparaçã de dois verdadeiros, ira dar `false`
+- `!` NOT
+
+  
 ## Conceitos Importantes
 - **Java é case-sensitive**.
   - Se a primeira letra for maiúscula, pode ser uma **classe** ou **interface** (padrão de nomenclatura).
