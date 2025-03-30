@@ -77,6 +77,25 @@ String valor = Integer.toString(30);
 ```
 Observação: Em alguns casos 'to<new_TIPO>' pode ser parse, como o 'parseInt'
 
+## Pre-incremetno e pos-incremento (Pode ser decremento)
+ - `<var>++;`  Adiciona depos
+ - `<var>++` Adicionar Primeiro
+
+## Math
+- `Math.PI` Valor de pi
+- `Math.pow(x, y)` Potência
+- `Math.sqtr(x)` Raiz quadrada
+- `Math.cbrt()` Raiz cubica
+
+Obs: - `Math.random()` Gera um numero entre 0 e 1
+
+### Arredondamento
+- `Math.abs(x)` Modulo
+- `Math.floor` Arredondamento para baixo (Truncagem): 3.9 -> 3
+- `Math.ceil` Arrendondar para cima: 4.2 -> 5
+- `Math.round` Arrendondamento real
+
+
 ## Conceitos Importantes
 - **Java é case-sensitive**.
   - Se a primeira letra for maiúscula, pode ser uma **classe** ou **interface** (padrão de nomenclatura).
@@ -89,4 +108,5 @@ Observação: Em alguns casos 'to<new_TIPO>' pode ser parse, como o 'parseInt'
 ## Pacotes
 - `public class <MinhaClasse> extends javax.swing.JFrame` Permite criar uma interface gráfica (GUI).
 - `import java.util.Scanner;` Importa a classe para entrada de dados.
+- `import Math` Importa regras aritimetricas
 
