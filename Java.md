@@ -95,6 +95,24 @@ Obs: - `Math.random()` Gera um numero entre 0 e 1
 - `Math.ceil` Arrendondar para cima: 4.2 -> 5
 - `Math.round` Arrendondamento real
 
+## Operadores
+
+## operador ternario
+```java
+<TIPO> <var> = <cond> ? <caso_1> : <caso_2>; //Atribuição a <var>
+```
+
+```java
+    String nome = "Rafael";
+    String nome_2 = new String("Rafael");
+
+    boolean r = (nome.equals(nome_2))?true:false;
+```
+Obs: O conteudo pode ser igual, mas a estrutura e diferente. O metodo `equals` serve para comparar o conteudo
+
+- `<var1> == <var2>` Igualdade
+- `<var1> != <var2>` Diferença
+
 
 ## Conceitos Importantes
 - **Java é case-sensitive**.
