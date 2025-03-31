@@ -120,6 +120,21 @@ Obs: O conteudo pode ser igual, mas a estrutura e diferente. O metodo `equals` s
 - `^` caso tenha uma comparaçã de dois verdadeiros, ira dar `false`
 - `!` NOT
 
+
+## Estruturas Condicionais
+```java
+        Scanner teclado = new Scanner(System.in);
+
+        int nasc = teclado.nextInt();
+        int i = 2024 - nasc;
+
+        if (i>18){
+            System.out.println("Maior");
+        } else {
+            System.out.println("Menor");
+        }
+
+```
   
 ## Conceitos Importantes
 - **Java é case-sensitive**.
