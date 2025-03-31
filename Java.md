@@ -187,6 +187,25 @@ Obs: O conteudo pode ser igual, mas a estrutura e diferente. O metodo `equals` s
         }
         System.out.println(tipo);
 ```
+
+## Laços de repetições
+```java
+ int cc = 0;
+
+        while (cc < 4){
+            System.out.println("camalhota " + (cc + 1));
+            cc++;
+        }
+
+```
+
+
+
+
+
+### Mudando fluxo
+- `continue` faz com que passe para o próximo
+- `break` Interompe
   
 ## Conceitos Importantes
 - **Java é case-sensitive**.
