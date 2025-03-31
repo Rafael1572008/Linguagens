@@ -209,8 +209,45 @@ Obs: O conteudo pode ser igual, mas a estrutura e diferente. O metodo `equals` s
            System.out.println("Rafael");
            cc++;
        } while (cc <= 5);
-
 ```
+
+
+### for
+```
+    for (int cc = 0;cc<=3; cc++){
+        System.out.println("Rafael");
+    }
+```
+
+### for-Each
+```java
+    for (int i:<vator_name>){
+        System.out.println(i);
+    }
+```
+
+
+## Array
+```java
+int[] n = new int[TAM];
+
+n[tam-1] = <var>; n[tam-2] = <var>; ... n[0] = <var>;
+
+// or
+
+int n[TAM] = {<var1>, <var2>,...,<var0>}; tam vezes
+```
+
+```java
+    int[] n = {3, 2, 8, 7, 5, 4};
+
+    //interação
+
+    for (int c = 0; c <=5 ; c++){
+        System.out.println(n[c]);
+    }
+```
+- `n.length` Tamanho
 
 
 
