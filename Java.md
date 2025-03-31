@@ -122,6 +122,8 @@ Obs: O conteudo pode ser igual, mas a estrutura e diferente. O metodo `equals` s
 
 
 ## Estruturas Condicionais
+
+### IF
 ```java
         Scanner teclado = new Scanner(System.in);
 
@@ -135,6 +137,27 @@ Obs: O conteudo pode ser igual, mas a estrutura e diferente. O metodo `equals` s
         }
 
 ```
+
+### Switch
+
+```java
+        Scanner teclado = new Scanner(System.in);
+
+        int pernas = teclado.nextByte();
+
+        String tipo = switch (pernas) {
+            case 1 -> "Saci";
+            case 2 -> "Bipede";
+            case 4 -> "Quadrupedi";
+            case 6, 8 -> "Aranha";
+            default -> "ET";
+        };
+
+        System.out.println(tipo);
+    }
+
+```
+
   
 ## Conceitos Importantes
 - **Java é case-sensitive**.
