@@ -189,6 +189,8 @@ Obs: O conteudo pode ser igual, mas a estrutura e diferente. O metodo `equals` s
 ```
 
 ## Laços de repetições
+
+### While
 ```java
  int cc = 0;
 
@@ -196,6 +198,17 @@ Obs: O conteudo pode ser igual, mas a estrutura e diferente. O metodo `equals` s
             System.out.println("camalhota " + (cc + 1));
             cc++;
         }
+
+```
+
+### Do-While
+```java
+        int cc = 0;
+
+       do {
+           System.out.println("Rafael");
+           cc++;
+       } while (cc <= 5);
 
 ```
 
