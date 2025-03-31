@@ -158,6 +158,35 @@ Obs: O conteudo pode ser igual, mas a estrutura e diferente. O metodo `equals` s
 
 ```
 
+### Switch "Certo"
+
+
+```java
+        Scanner teclado = new Scanner(System.in);
+
+        int pernas = teclado.nextByte();
+
+        String tipo;
+
+        switch (pernas) {
+            case 1:
+                tipo = "Saci";
+                break;
+            case 2:
+                tipo = "Bipede";
+                break;
+            case 4:
+                tipo = "Quadrupedi";
+                break;
+            case 6, 8:
+                tipo = "Aranha";
+                break;
+            default:
+                tipo = "ET";
+                break;
+        }
+        System.out.println(tipo);
+```
   
 ## Conceitos Importantes
 - **Java é case-sensitive**.
