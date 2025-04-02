@@ -258,7 +258,7 @@ void soma(int a, int b){
     System.out.println(s);
 }
 ```
-Obs: Coloque fora do main
+Obs: Dentro do Main. como método
 
 
 
