@@ -249,6 +249,17 @@ int n[TAM] = {<var1>, <var2>,...,<var0>}; tam vezes
 ```
 - `n.length` Tamanho
 
+## Métodos
+Metodos são tipos variaveis
+
+```java
+void soma(int a, int b){
+    int s = a+b;
+    System.out.println(s);
+}
+```
+Obs: Coloque fora do main
+
 
 
 
