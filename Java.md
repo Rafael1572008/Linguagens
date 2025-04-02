@@ -259,7 +259,14 @@ void soma(int a, int b){
 }
 ```
 Obs: Dentro do Main. como método
+Void não retorna nada
 
+### Com retorno
+```java
+    static int soma (int a, int b){
+        return a+b;
+    }
+```
 
 
 
