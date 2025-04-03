@@ -37,3 +37,22 @@ console.log("server criado")
 - `createServe` Para iniciar o server
 - `listen(<int>)` Definir qual porta
 - `end()` Saida
+
+## Exepress
+
+### instalação
+``` npm install express --safe```
+
+```javascript
+import express from 'express'
+const app = express()
+
+// algorith
+
+app.listen(8081)
+```
+Inciando o express
+- `listen()` Sempre sera a ultima linha
+- `localhost:<port>` comando para abir no navegador
+
+## Abrir servidor
