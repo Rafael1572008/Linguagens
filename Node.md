@@ -55,4 +55,11 @@ Inciando o express
 - `listen()` Sempre sera a ultima linha
 - `localhost:<port>` comando para abir no navegador
 
-## Abrir servidor
+## Exibir no terminal
+Ultilizando uma função callback no listen, Podemos mostar menssagens e erros
+
+```javascript
+app.listen(8081, function(){
+    console.log("Servidor rodando na url http://localhost:8081")
+})
+```
