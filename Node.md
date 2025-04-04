@@ -70,3 +70,13 @@ app.get("/", function(req, res){
 })
 ```
 - `send` Envio
+
+## Parametros
+```javascript
+app.get('/ola/:nome', function(req, res){
+    res.send(req.params)
+})
+```
+Explicação: Na URl, tera os parametros. O `req.params` pega eles e transforma em um `Json`
+
+- Req: reponsavel por receber dados de uma requisição
