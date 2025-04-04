@@ -80,3 +80,19 @@ app.get('/ola/:nome', function(req, res){
 Explicação: Na URl, tera os parametros. O `req.params` pega eles e transforma em um `Json`
 
 - Req: reponsavel por receber dados de uma requisição
+
+## enviar html
+```javascript
+import { dirname } from 'path';
+import { fileURLToPath } from 'url';
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+```
+Isso é necessario para pegar o diretório padrão
+
+```javascript
+app.get("/", function(req, res){
+    res.sendFile(__dirname + "/html/index.html")
+})
+```
+- `sendFile` Responsavel por mostrar o html
