@@ -96,3 +96,31 @@ app.get("/", function(req, res){
 })
 ```
 - `sendFile` Responsavel por mostrar o html
+
+## MySql
+`MySql -u root -p` + enter: Para entrar pelo terminal
+
+## Usando sequelize e mysql12
+```javascript
+import { Sequelize } from "sequelize"; //Biblioteca para fazer a conexao com o DB
+```
+```javascript
+const sequelize = new Sequelize('test', 'root', '12345', {
+    host: "localhost", //local
+    dialect: "mysql" //Tipo do banco
+}) // sequelize ira ser o objeto de conexao
+```
+O Sequelize recebe 4 parametros
+1. `test` <- nome do banco
+2. `root` <- Usuario
+3. `12345` <- senha do banco
+4. `{ host: "localhost, dialect: "mysql" }` <- local e tipo do banco
+
+```javascript
+sequelize.authenticate().then(function(){
+    console.log("Sucesso!")
+}).catch(function(erro){
+    console.log("Falha ao se conectar! " + erro)
+}) // tipo um if
+```
+É tipo um if, mas só com mais desenvolvimento
