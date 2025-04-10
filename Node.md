@@ -124,3 +124,27 @@ sequelize.authenticate().then(function(){
 }) // tipo um if
 ```
 É tipo um if, mas só com mais desenvolvimento
+
+## Criando tabelas
+```javascript
+const Postagem = sequelize.define('postagens', {
+    titulo :{
+        type: Sequelize.STRING
+    },
+    conteudo: {
+        type: Sequelize.TEXT
+    }
+})
+
+Postagem.sync({force: true})
+```
+- `sequelize.define('<tablename>, {COLUNMS}')` Criar a tabela com suas colunas
+- `Postagem.sync({force: true})` Força que as alterações sejam feitas
+
+## Criando elementos na tebela
+```javascript
+Postagem.create({
+    titulo: "Titulo qualquer",
+    conteudo: "Qualquer"
+})
+```
