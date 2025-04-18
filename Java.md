@@ -295,3 +295,20 @@ Um objeto é composto por
 - Atributos: O que compoem aquele objeto
 - Metodos: Ações que faço com tal objeto
 - Estado: Como esse obejto se encontra
+
+## Crair um modelo
+```java
+public class <Name_Class> {
+<TP> <var_name>;
+...
+}
+```
+
+```java
+public class Main{
+    public static void main(String[] args){
+        <Name_Class> <var1> = new <name_class>;
+        <var1>.<var_name> = <var>
+}
+}
+```
