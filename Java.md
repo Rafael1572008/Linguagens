@@ -312,3 +312,17 @@ public class Main{
 }
 }
 ```
+
+`this. `referencia ao próprio objeto que chamou
+
+## Modificadores de visibilidade
+
+### UML
+- +: Publico
+- -: Privado (somente a classe atual pode usar)
+- #: Protegido (Classe atual e todas as suas filhas)
+
+## Java
+- +: public
+- -: private
+- #: protected
