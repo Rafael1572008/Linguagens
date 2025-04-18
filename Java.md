@@ -289,3 +289,9 @@ Void não retorna nada
 - `import java.util.Scanner;` Importa a classe para entrada de dados.
 - `import Math` Importa regras aritimetricas
 
+# POO
+# o que tem um objeto?
+Um objeto é composto por
+- Atributos: O que compoem aquele objeto
+- Metodos: Ações que faço com tal objeto
+- Estado: Como esse obejto se encontra
