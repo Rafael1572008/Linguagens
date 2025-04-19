@@ -42,6 +42,7 @@ public class Teste2 {
 System.out.print(String.format("%.2f", <variavel>));
 System.out.print("<frase>" + <variavel>);
 System.out.format("%s", <variavel>); // Para imprimir strings
+System.out.printf("TOTAL = R$ %.2f\n", funcionario.new_salario()); //Jeito certo de mostrar dooble
 ```
 
 ## Entrada de Dados
@@ -49,6 +50,7 @@ System.out.format("%s", <variavel>); // Para imprimir strings
 2. **Crie a classe**
 3. **Cada entrada é separada por ' '** e a ordem é estritamente importante
 4. **Atribua cada dado a uma variável**
+5. **Fecha o scanner**
 
 ### Exemplo
 ```java
@@ -63,9 +65,12 @@ public class Main {
         String name = teclado.nextLine();// segunda atribuicao
 
         System.out.format("A nota do %s é %.1f", name, sal); //saida
+
+        teclado.close()
     }
 }
 ```
+OBS: taclado.close() serve para para o scanner, isso não permite vazamento de dados
 
 ## Conversões
 ```java
@@ -303,6 +308,7 @@ public class <Name_Class> {
 ...
 }
 ```
+OBS: só uma classe pode ser public por arquivo
 
 ```java
 public class Main{
