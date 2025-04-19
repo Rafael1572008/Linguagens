@@ -332,3 +332,5 @@ public class Main{
 - +: public
 - -: private
 - #: protected
+
+## Métodos acessores (getters e setters)
