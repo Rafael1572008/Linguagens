@@ -334,3 +334,41 @@ public class Main{
 - #: protected
 
 ## Métodos acessores (getters e setters)
+
+- `get...` Mostrar o obejto
+- `set...` Trocar o valor do obejto
+
+## Método Construtor
+
+```java
+public class Caneta {
+    public String modelo;
+    private float ponta;
+    public boolean tampada;
+    public String cor;
+
+    public Caneta(){       //Método ocnstrutor
+        this.cor = "Azul";
+        this.tampar();
+    }
+```
+### Outro tipo
+```java
+public class Caneta {
+    public String modelo;
+    private float ponta;
+    public boolean tampada;
+    public String cor;
+
+    public Caneta(String m, String c, float p){
+        this.cor = c;
+        this.modelo = m;
+        this.ponta = p;
+        this.tampar();
+    }
+```
+
+### Main
+```java
+Caneta c1 = new Caneta("Bic", "Amarela", 0.4f);
+```
