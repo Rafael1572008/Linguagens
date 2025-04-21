@@ -372,3 +372,19 @@ public class Caneta {
 ```java
 Caneta c1 = new Caneta("Bic", "Amarela", 0.4f);
 ```
+
+## Pilares da POO
+- Encapsulamento
+- Herança
+- Polimorfismo
+
+## Encapsulamento
+```É o conceito de esconder os detalhes internos de um objeto e proteger os dados, permitindo acesso somente por meio de métodos específicos.```
+
+### Interface
+```Uma interface é como um contrato que diz o que uma classe deve fazer, mas não como ela faz. Ela define os métodos que uma classe deve implementar, mas não tem código dentro desses métodos. ```
+
+### Vantagens
+- Tornar mudanças invisiveis
+- Facilitar reutilização do código
+- Reduzir efeitos colaterais (Deixar mais protegido)
