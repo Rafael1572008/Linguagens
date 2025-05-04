@@ -71,6 +71,33 @@ cond = (array > 5) & (array < 9)
 &: and
 /: or
 
-
-
 ```
+
+## Numeros aleatorios
+
+### Gerar valores aleatórios
+```python
+np.random.seed(123) # Os valores aletorios sempre serão os mesmos
+array = np.random.randint(1, 101, 20) # de 1 a 100, tendo 20 valores
+```
+
+### Valores aleatorios com certo padão
+```python
+array = np.random.normal(50, 25, 2000) #media de 10, com desvio de 2 e 20 valores
+```
+
+### Bonus, histograma
+```python
+import numpy as np
+import matplotlib.pyplot as plt 
+
+np.random.seed(123) # Os valores aletorios sempre serão os mesmos
+array = np.random.randint(1, 101, 20) # de 1 a 100, tendo 20 valores
+
+
+array = np.random.normal(50, 25, 2000) #media de 10, com desvio de 2 e 20 valores
+plt.hist(array)
+plt.show()
+```
+
+- Esse prog vai retorna um histograma
