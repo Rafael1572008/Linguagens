@@ -101,3 +101,38 @@ plt.show()
 ```
 
 - Esse prog vai retorna um histograma
+
+## Pandas
+### Importar
+```python
+import pandas as pd
+```
+
+### Ler arquivos
+```python
+data = pd.read_csv('data/titanic/train.csv') # ler comma separated values, csv 
+```
+
+### Informações dos dados
+```python
+print(data) # Tabela dos dados
+print(data.head()) # Início dos dados, Podemos definir n(int) como parametro para mostrar as n linhas iniciais
+print(data.tail()) # Fim dos dados
+
+data.info() # retorna as informações da tabela
+
+print(data.columns) # Retornar as colunas
+```
+### Descrições da tabela
+
+```python
+print(data.describe()) # Resumo estatistico dos campos numéricos
+
+print(data.describe(include='O')) # Mostrar colunas apenas que são do tipo String
+```
+### Renomear
+
+```python 
+data.rename({'Name': 'Nome', 'Sex': 'Sexo'}, axis=1, inplace=True) # Renomear coluna. Caso axis seja 0, ele modifica linha
+```
+
