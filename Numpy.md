@@ -136,3 +136,29 @@ print(data.describe(include='O')) # Mostrar colunas apenas que são do tipo Stri
 data.rename({'Name': 'Nome', 'Sex': 'Sexo'}, axis=1, inplace=True) # Renomear coluna. Caso axis seja 0, ele modifica linha
 ```
 
+## Selecionar coluna
+```python
+print(data['Name']) # selecionar coluna
+print(data[['Name', 'Sex']]) # selecionar colunas
+```
+
+## Funções matemáticas
+```python
+print(data['Age'].mean()) #Média
+
+print(data['Age'].sum()) #soma
+
+print(data['Age'].count()) #contar
+
+print(data['Age'].median()) #Mediana
+
+print(data['Age'].mode()) #Moda
+
+print(data['Age'].max()) #Max
+
+print(data['Age'].min()) #Minimo
+
+print(data['Age'].idxmin()) #Indice de quem tem a menor idade
+
+print(data['Age'].idxmax()) #Indice de quem tem a maior idade
+```
