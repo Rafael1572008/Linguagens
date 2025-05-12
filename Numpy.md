@@ -162,3 +162,26 @@ print(data['Age'].idxmin()) #Indice de quem tem a menor idade
 
 print(data['Age'].idxmax()) #Indice de quem tem a maior idade
 ```
+
+```python
+import pandas as pd
+
+data = pd.read_csv('tralalelo/train.csv')
+
+
+# Selecionando pelo index
+print(data.iloc[630]) #pegar por id
+
+print(data.iloc[[630]]) #pegar por id e pegar linha
+
+print(data.iloc[[630, 803]]) #pegar por id e mostrar dois registros
+
+print(data.iloc[:3]) #pegar por id e pegar linha
+
+print(data['Name'].iloc[2]) #pegar valor da coluna do id selecionado
+
+# Operador de seleção loc
+print(data[['Name', 'Sex']].loc[data['Sex'] == 'male']) # where de SQL em pandas 
+
+print(data[['Name', 'Sex']].loc[(data['Age'] >= 3) & (data['Age'] <= 10) & (data['Survived'] == 1)]) # where de SQL em pandas com mais de um if
+```
