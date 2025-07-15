@@ -185,3 +185,27 @@ print(data[['Name', 'Sex']].loc[data['Sex'] == 'male']) # where de SQL em pandas
 
 print(data[['Name', 'Sex']].loc[(data['Age'] >= 3) & (data['Age'] <= 10) & (data['Survived'] == 1)]) # where de SQL em pandas com mais de um if
 ```
+## Loc
+```python
+import pandas as pd
+
+data = pd.read_csv('train.csv')
+
+# 'Where' filtrar dados
+print(data[['Age', 'Fare']].loc[data['Sexo'] == 'male'])
+
+# 'Where' filtrar dados, Condição Compostas
+print(data[['Age', 'Sexo', 'Fare', 'Pclass', 'Survived']]\
+      .loc[(data['Age'] >= 3) & (data['Age'] <= 10) & (data['Survived'] == 1)])
+# \: Continua o cond na linha de baixo
+
+#negação
+(data['Survived'] == 1)]
+
+# exemplo
+print(data[['Age', 'Sexo', 'Fare', 'Pclass', 'Survived']]\
+      .loc[(data['Age'] > 14) \
+           & (data['Survived'] == 1) \
+            & ~(data['Sexo'] == 'female') \
+                & (data['Pclass'] == 3)].count())
+```
