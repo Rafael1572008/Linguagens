@@ -225,3 +225,19 @@ print(data['Sexo'].replace({'male': 'masculino',
 
 print(data[['Nome', 'Age', 'Sexo']])
 ```
+
+## GrouopBy
+```python
+import pandas as pd
+
+data = pd.read_csv('C:/Users/rafael.pires/Documents/Udemy/Progs/train.csv')
+
+print(data)
+
+# Agrupando por sexo e contando
+print(data.groupby('Sex').count())
+
+# Agrupando masi de um valor 
+print(data.groupby(['Sex', 'Pclass']).count())
+```
+Obs: As funções de cima não aplicam nas de baixo caso vc não salve em uma variável
