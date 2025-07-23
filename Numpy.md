@@ -209,3 +209,19 @@ print(data[['Age', 'Sexo', 'Fare', 'Pclass', 'Survived']]\
             & ~(data['Sexo'] == 'female') \
                 & (data['Pclass'] == 3)].count())
 ```
+
+## Map e  (Substituição de Valores)
+```python
+# Substituir registro, passamos um dicionário para a troca (Ainda não aplicado)
+print(data['Sexo'].map({'male': 'masculino', 
+                        'female': 'feminino'}))
+
+# Substituir registro, podemos  passar uma lista de quais alterar, e passar o valor atualizado
+#print(data['Sexo'].replace(['male', 'female'], 'pessoa'))
+
+# Ortogando as alterações
+print(data['Sexo'].replace({'male': 'masculino',
+                             'female': 'feminino'}, inplace=True))
+
+print(data[['Nome', 'Age', 'Sexo']])
+```
