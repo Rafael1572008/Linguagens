@@ -241,3 +241,20 @@ print(data.groupby('Sex').count())
 print(data.groupby(['Sex', 'Pclass']).count())
 ```
 Obs: As funções de cima não aplicam nas de baixo caso vc não salve em uma variável
+
+## Crosstab
+```python
+import pandas as pd
+
+data = pd.read_csv('C:/Users/rafael.pires/Documents/Udemy/Progs/train.csv')
+
+# Tabela cruzada (Sobreviveu x classe)
+print(pd.crosstab(data['Survived'], data['Pclass'], margins=True))  # Margins 'True' Somatorio das colunas
+# L x C
+
+print()
+
+# Tabela cruzada (Sobreviveu x Sexo)
+print(pd.crosstab(data['Survived'], data['Sex'], margins=True))
+# L x C
+```
