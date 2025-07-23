@@ -258,3 +258,15 @@ print()
 print(pd.crosstab(data['Survived'], data['Sex'], margins=True))
 # L x C
 ```
+OrderBy
+```python
+import pandas as pd
+
+data = pd.read_csv('C:/Users/rafael.pires/Documents/Udemy/Progs/train.csv')
+
+# Ordernar dados
+print(data[['Age', 'Sex', 'Pclass', 'Survived']].sort_values('Age', ascending=False)) # False: decrecente
+
+#Ordenar por indice
+print(data[['Age', 'Sex', 'Pclass', 'Survived']].sort_index(ascending=True))
+```
