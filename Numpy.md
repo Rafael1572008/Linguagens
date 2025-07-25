@@ -337,3 +337,24 @@ print(data['Age'].apply(lambda x: x**2))
 data['Ticket'] = data['Ticket'].apply(lambda x: x[:-1])
 print(data['Ticket'])
 ```
+
+# Variaveis Dummy (HotEnconde) e Concat
+```python
+import pandas as pd
+
+data = pd.read_csv('C:/Users/rafael.pires/Documents/Udemy/Progs/train.csv')
+
+
+# variável numérica que representa categorias de uma variável qualitativa
+print(pd.get_dummies(data, columns=['Sex'], drop_first=True))
+data = pd.get_dummies(data, columns=['Sex'], drop_first=True)
+
+embarque = pd.get_dummies(data['Embarked'], drop_first=True)
+
+# Concatenar dataframe
+data = pd.concat([data, embarque], axis=1)
+print(data.shape)
+
+print(data.drop('Embarked', axis=1, inplace=True))
+print(data)
+```
