@@ -270,3 +270,61 @@ print(data[['Age', 'Sex', 'Pclass', 'Survived']].sort_values('Age', ascending=Fa
 #Ordenar por indice
 print(data[['Age', 'Sex', 'Pclass', 'Survived']].sort_index(ascending=True))
 ```
+
+## Manipulando dados nulos
+```python
+import pandas as pd
+
+data = pd.read_csv('C:/Users/rafael.pires/Documents/Udemy/Progs/train.csv')
+
+# Verificar dados nulos
+print(data.isnull()) # SAber onde esta faltando dados
+
+# Somar de dados faltando
+print(data.isnull().sum())
+
+# Normalmente, quando não há muitos dados em uma coluna, excluimos ela (Machine learn)
+
+
+# Nulos de apenas uma coluna
+print(data['Cabin'].isnull())
+
+
+# Localizar colunas que estão vazias
+print(data.loc[data['Embarked'].isnull()]) #Obs: podemos observar que elas estavão juntas, ticket, cabine, valor
+
+#distinguir valores
+print(data['Embarked'].unique())
+
+# Moda
+print(data['Embarked'].mode())
+
+# Prencher valor em branco
+print(data['Embarked'].fillna('S', inplace=True))
+```
+
+## Deletar linha e coluna
+```python
+import pandas as pd
+
+data = pd.read_csv('C:/Users/rafael.pires/Documents/Udemy/Progs/train.csv')
+
+print(data.isnull().sum())
+
+# Deletar coluna (copia para visual)
+print(data.drop('Cabin', axis=1, inplace=True)) # Podemos passar mais valores ([n1, n2...]), para aplicar, inplace = true
+
+print(data.isnull().sum())
+
+# Deletar linha
+
+print(data.head())
+
+# deleta a linha do index 0
+print(data.drop(1)) # Podemos passar mais valores ([n1, n2...]), para aplicar, inplace = true
+```
+
+# Aply e Lambda
+```python
+
+```
