@@ -326,5 +326,14 @@ print(data.drop(1)) # Podemos passar mais valores ([n1, n2...]), para aplicar, i
 
 # Aply e Lambda
 ```python
+import pandas as pd
 
+data = pd.read_csv('C:/Users/rafael.pires/Documents/Udemy/Progs/train.csv')
+
+# Aplicação de idade pra seu expoente quadratico
+print(data['Age'].apply(lambda x: x**2))
+
+# Usado em machine learne
+data['Ticket'] = data['Ticket'].apply(lambda x: x[:-1])
+print(data['Ticket'])
 ```
