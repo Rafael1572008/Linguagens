@@ -372,3 +372,28 @@ data['Titulo'] =  data['Name'].str.extract('([a-zA-Z]+)\.')
 
 print(data)
 ```
+
+## Engenharia de recursos
+```python
+import pandas as pd
+
+data =  pd.read_csv('C:/Users/aline/Documents/Udemy/Prog/train.csv')
+
+# Funções Rex
+
+# Pegar apenas titulos (Miss, Master)
+data['Titulo'] =  data['Name'].str.extract('([a-zA-Z]+)\.')
+
+## Titulos x quantidade
+print(pd.crosstab(data['Titulo'], data['Sex']))
+# Atraves de miss, sabemos que 182 são solterias
+
+
+# Categorizar apenas pelo que esta no conchete
+data['Titulo'] = data['Titulo'].apply(lambda x: 'Outros' if x not in ['Mrs', 'Miss', 'Master', 'Mr'] else x)
+
+print(pd.crosstab(data['Titulo'], data['Sex']))
+
+## Mostras dos os registros onde tenha Master (meninos)
+print(data[['Titulo', 'Sex', 'Age', 'Pclass', 'Survived']].loc[data['Titulo'] == 'Master'])
+```
