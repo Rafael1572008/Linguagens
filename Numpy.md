@@ -324,7 +324,7 @@ print(data.head())
 print(data.drop(1)) # Podemos passar mais valores ([n1, n2...]), para aplicar, inplace = true
 ```
 
-# Aply e Lambda
+## Aply e Lambda
 ```python
 import pandas as pd
 
@@ -338,7 +338,7 @@ data['Ticket'] = data['Ticket'].apply(lambda x: x[:-1])
 print(data['Ticket'])
 ```
 
-# Variaveis Dummy (HotEnconde) e Concat
+## Variaveis Dummy (HotEnconde) e Concat
 ```python
 import pandas as pd
 
@@ -356,5 +356,19 @@ data = pd.concat([data, embarque], axis=1)
 print(data.shape)
 
 print(data.drop('Embarked', axis=1, inplace=True))
+print(data)
+```
+
+## Expressões regulares
+```python
+import pandas as pd
+
+data =  pd.read_csv('C:/Users/aline/Documents/Udemy/Prog/train.csv')
+
+# Funções Rex
+
+# Pegar apenas titulos (Miss, Master)
+data['Titulo'] =  data['Name'].str.extract('([a-zA-Z]+)\.')
+
 print(data)
 ```
