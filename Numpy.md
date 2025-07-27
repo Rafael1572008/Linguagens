@@ -397,3 +397,21 @@ print(pd.crosstab(data['Titulo'], data['Sex']))
 ## Mostras dos os registros onde tenha Master (meninos)
 print(data[['Titulo', 'Sex', 'Age', 'Pclass', 'Survived']].loc[data['Titulo'] == 'Master'])
 ```
+
+## Interrows
+```python
+import pandas as pd
+
+cabin =  pd.read_csv('C:/Users/aline/Documents/Udemy/Prog/train.csv')
+
+# Mudando valores das linahs
+print(cabin['Cabin'])
+
+# Limpar cabines nulas e pegar primeira letra
+for idx, _ in cabin[['Cabin']].dropna().iterrows(): # Excluir valores nulos
+  cabine_ind = cabin['Cabin'].at[idx][0]
+  cabin['Cabin'].at[idx] = cabine_ind[0]
+
+# Mortes por cabines
+print(cabin[['Cabin', 'Sex', 'Survived', 'Pclass']].dropna().groupby(['Cabin', 'Sex']).count())
+```
